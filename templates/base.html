@@ -36,7 +36,7 @@
     {% block extra_js %}
     {% endblock %}
 
-    <title>Boutique Ado {% block extra_title %}{% endblock %}</title>
+    <title>Gregmedi<b>scrubs</b> {% block extra_title %}{% endblock %}</title>
 </head>
 
 <body>
@@ -46,12 +46,15 @@
     <div class="message-container"></div>
     {% endif %}
 
+
     {% block page_header %}
     {% endblock %}
 
+    <!-- Page main content -->
     {% block content %}
     {% endblock %}
 
+    <!-- Javascript to load at the end of the body -->
     {% block postloadjs %}
     {% endblock %}
 
