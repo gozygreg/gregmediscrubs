@@ -3,11 +3,20 @@ html {
 }
 
 body {
-    background: url('/media/Womens\ black\ scrub\ top\ and\ bottom.webp') no-repeat center center fixed;
+
     background-size: cover;
     height: calc(100vh - 164px);
     color: #555;
     font-family: 'Lato';
+}
+
+
+.index-img {
+    background: url('/media/cover\ image.jpeg') no-repeat center center;
+    background-size: cover;
+    color: white;
+    font-family: 'Lato';
+
 }
 
 
@@ -192,17 +201,21 @@ a.category-badge>span.badge:hover {
     }
 
     .header-container {
-        padding-top: 164px;
+        padding-top: 110px;
     }
 }
 
 /* pad the top a bit when navbar is collapsed on mobile */
 @media (max-width: 991px) {
     .header-container {
-        padding-top: 116px;
+        padding-top: 62px;
+    }
+
+    .index-img {
+        width: fit-content
     }
 
     body {
-        height: calc(100vh - 116px);
+        height: calc(100vh - 62px);
     }
 }
