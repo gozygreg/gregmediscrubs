@@ -20,6 +20,7 @@ body {
 }
 
 
+
 /* from Bulma */
 .icon {
     align-items: center;
@@ -217,5 +218,12 @@ a.category-badge>span.badge:hover {
 
     body {
         height: calc(100vh - 62px);
+    }
+
+}
+
+@media only screen and (min-width: 770px) and (max-width: 1380px) {
+    .ratings {
+        display: none;
     }
 }

@@ -9,12 +9,59 @@
 </div>
 {% endblock %}
 
+
+
 {% block content %}
-<br><br>
-<div class="container">
-    <div class="row">
-        <div class="col">
-            {{ products }}
+<!-- Introduction section -->
+<section class="py-4 text-center container-fluid cover-img">
+    <div class="row py-lg-5">
+        <div class="col-lg-6 col-md-8 mx-auto">
+            <h4> Gregmedi<strong>wears</strong>....for your comfort at work! </h4>
+            <br><br>
+            <p class="lead text-muted">
+                Browse our extensive collection.
+            </p>
+            <br><br>
+            <a href="#" class="btn btn-primary my-2"><i class="fa fa-user-plus" aria-hidden="true"></i>&nbsp; Create an
+                account </a>
+        </div>
+    </div>
+    </div>
+</section>
+<!-- All products section -->
+<div class="album py-5 bg-light">
+    <div class="container">
+        <div class="pb-3 h5"> All products </div>
+        <hr>
+        <br>
+        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-5 g-3">
+            {% for product in products %}
+            <div class="col">
+                <div class="card shadow-sm mb-4">
+                    {% if product.image %}
+                    <img class="img-fluid" alt="{{ product.name }}" src="{{ product.image.url }}">
+                    {% else %}
+                    <img class="img-fluid" alt="{{ product.name }}" src="{{ MEDIA_URL }}noimage">
+                    {% endif %}
+                    <div class="card-body">
+                        <p class="card-text">
+                            <a class="text-info text-decoration-none"
+                                href="{{ product.get_absolute_url }}">{{ product.name | capfirst }}</a>
+                        </p>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <h5> £ {{ product.price }} </h5>
+                            {% if product.rating %}
+                            <small class="text-muted ratings"><i class="fas fa-star mr-1"></i>{{ product.rating }} /
+                                5</small>
+                            {% else %}
+                            <small class="text-muted ratings">No Rating</small>
+                            {% endif %}
+                        </div>
+                    </div>
+                </div>
+            </div>
+            {% endfor %}
+
         </div>
     </div>
 </div>
