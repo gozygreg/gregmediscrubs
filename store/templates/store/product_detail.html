@@ -1,0 +1,82 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block page_header %}
+<div class="container header-container">
+    <div class="row">
+        <div class="col"></div>
+    </div>
+</div>
+{% endblock %}
+
+{% block content %}
+<div class="container">
+    <main class="pt-5">
+        <div class="row g-3">
+            <div class="col-md-5 col-lg-5 order-md-first bg-light">
+                <!-- Product image -->
+                {% if product.image %}
+                <a href="{% url 'product_detail' product.id %}" target="_blank">
+                    <img class="card-img-top img-fluid" src="{{ product.image.url }}" alt="{{ product.name }}">
+                </a>
+                {% else %}
+                <a href="{% url 'product_detail' product.id %}">
+                    <img class="card-img-top img-fluid" src="{{ MEDIA_URL }}noimage.png" alt="{{ product.name }}">
+                </a>
+                {% endif %}
+            </div>
+            <div class="col-md-7 col-lg-7 ps-md-3 ps-lg-5">
+                <h1 class="mb-0 h4">
+                    <!-- Product title -->
+                    {{ product.name | capfirst}}
+                </h1>
+
+                {% if product.rating %}
+                <small class="text-muted"><i class="fas fa-star mr-1"></i>{{ product.rating }} / 5</small>
+                {% else %}
+                <small class="text-muted">No Rating</small>
+                {% endif %}
+                <hr>
+                <br>
+                <p>
+                    <!-- Product description -->
+                    {{ product.description | capfirst }}
+                </p>
+                <div class="border">
+                    <div class="col border-bottom">
+                        <div class="row p-3">
+                            <div class="col-6"> Price </div>
+                            <div class="col-6 text-end"><span class="h4 fw-bold">£
+                                    <!-- Product price -->
+                                    {{ product.price }}
+                                </span></div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="row p-3">
+                            <div class="col-6">
+                                <label for="select">Qty</label>
+                                &nbsp;
+                                <select id="select">
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                    <option value="4">4</option>
+                                </select>
+                            </div>
+                            <div class="col-6 text-end">
+                                <button type="button" id="add-button" value="{{ product.id }}"
+                                    class="btn btn-secondary btn-sm">
+                                    Add to cart
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <input type="hidden" name="redirect_url" id="redirect-url" value="{{ request.path }}">
+            </div>
+        </div>
+    </main>
+    <br>
+</div>
+{% endblock %}

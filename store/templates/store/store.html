@@ -39,9 +39,13 @@
             <div class="col">
                 <div class="card shadow-sm mb-4">
                     {% if product.image %}
-                    <img class="img-fluid" alt="{{ product.name }}" src="{{ product.image.url }}">
+                    <a href="{% url 'product_detail' product.id %}">
+                        <img class="img-fluid" alt="{{ product.name }}" src="{{ product.image.url }}">
+                    </a>
                     {% else %}
-                    <img class="img-fluid" alt="{{ product.name }}" src="{{ MEDIA_URL }}noimage">
+                    <a href="{% url 'product_detail' product.id %}">
+                        <img class="img-fluid" alt="{{ product.name }}" src="{{ MEDIA_URL }}noimage">
+                    </a>
                     {% endif %}
                     <div class="card-body">
                         <p class="card-text">
