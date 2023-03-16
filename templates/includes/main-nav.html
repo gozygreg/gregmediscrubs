@@ -6,9 +6,9 @@
                 All Products
             </a>
             <div class="dropdown-menu border-0" aria-labelledby="all-products-link">
-                <a href="" class="dropdown-item">By Price</a>
-                <a href="" class="dropdown-item ">By Rating</a>
-                <a href="" class="dropdown-item ">By Category</a>
+                <a href="{% url 'store' %}?sort=price&direction=asc" class="dropdown-item">By Price</a>
+                <a href="{% url 'store' %}?sort=rating&direction=desc" class="dropdown-item ">By Rating</a>
+                <a href="{% url 'store' %}?sort=category&direction=asc" class="dropdown-item ">By Category</a>
                 <a href="{% url 'store' %}" class="dropdown-item">All Products</a>
             </div>
         </li>
@@ -32,8 +32,8 @@
                 Gowns
             </a>
             <div class="dropdown-menu border-0" aria-labelledby="homeware-link">
-                <a href="{% url 'store' %}?category=surgical" class="dropdown-item">Surgical</a>
-                <a href="{% url 'store' %}?category=nonsterile" class="dropdown-item">Nonsterile</a>
+                <a href="{% url 'store' %}?category=Surgical" class="dropdown-item">Surgical</a>
+                <a href="{% url 'store' %}?category=Nonsterile" class="dropdown-item">Nonsterile</a>
             </div>
         </li>
     </ul>
