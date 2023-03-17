@@ -47,7 +47,7 @@ INSTALLED_APPS = [
     'bag',
     'checkout',
     # Other
-    # 'crispy_forms',
+    'crispy_forms',
 ]
 
 MIDDLEWARE = [
@@ -62,7 +62,7 @@ MIDDLEWARE = [
 
 ROOT_URLCONF = 'gregmediscrubs.urls'
 
-# CRISPY_TEMPLATE_PACK = 'bootstrap4'
+CRISPY_TEMPLATE_PACK = 'bootstrap4'
 
 TEMPLATES = [
     {
@@ -81,10 +81,10 @@ TEMPLATES = [
                 'django.template.context_processors.media',
                 'bag.contexts.bag_contents',
             ],
-            # 'builtins': [
-            #     'crispy_forms.templatetags.crispy_forms_tags',
-            #     'crispy_forms.templatetags.crispy_forms_field',
-            # ]
+            'builtins': [
+                'crispy_forms.templatetags.crispy_forms_tags',
+                'crispy_forms.templatetags.crispy_forms_field',
+            ]
         },
     },
 ]
