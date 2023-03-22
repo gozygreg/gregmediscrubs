@@ -7,6 +7,7 @@ from django.db.models.functions import Lower
 from .models import Product, Category, ReviewRating
 from checkout.models import Order, OrderLineItem
 from .forms import ProductForm, ReviewForm
+from django.contrib.auth.models import User
 
 
 def all_products(request):
@@ -65,8 +66,19 @@ def product_detail(request, product_id):
 
     product = get_object_or_404(Product, pk=product_id)
 
+    try:
+        order_line_item = OrderLineItem.objects.filter(product=product, order__user_profile=request.user.userprofile)
+        # Check if the product is in any order
+        if order_line_item.exists():
+            order = order_line_item[0].order
+        else:
+            order = None
+    except OrderLineItem.DoesNotExist:
+        order = None
+
     context = {
         'product': product,
+        'order': order,
     }
 
     return render(request, 'store/product_detail.html', context)
