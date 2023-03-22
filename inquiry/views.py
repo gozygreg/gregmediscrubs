@@ -5,7 +5,7 @@ from django.contrib.messages.views import SuccessMessageMixin
 from .forms import InquiryForm
 
 
-class ContactUs(SuccessMessageMixin, CreateView):
+class Inquiry(SuccessMessageMixin, CreateView):
     """"
     Handles the contact form display and submission
     """

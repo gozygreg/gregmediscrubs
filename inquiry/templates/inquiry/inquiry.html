@@ -1,7 +1,7 @@
 {% extends 'base.html' %}
 {% load static %}
 
-{% block head_title %}- Contact Us{% endblock %}
+{% block head_title %}- Inquiry {% endblock %}
 
 {% block content %}
 
@@ -40,10 +40,11 @@
 
     </div>
 
-    <!-- Contact form -->
+    <!-- Inquiry form -->
     <form class="mx-auto" action="" method="POST">
 
-
+        {% csrf_token %}
+        {{form|crispy}}
 
         <div class="text-center">
             <a href="" class="btn btn-black border border-black rounded-0 px-4 mt-3"
