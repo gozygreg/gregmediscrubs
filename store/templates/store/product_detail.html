@@ -181,15 +181,16 @@
                 <header class="section-heading">
                     <h3>Customer Reviews</h3>
                 </header>
-
+                {% for review in reviews %}
                 <article class="box mb-3">
                     <div class="icontent w-100">
-                        <img src="" class="img-xs icon rounded-circle">
+                        <!-- <img src="" class="img-xs icon rounded-circle"> <i class="fa-solid fa-user"></i> -->
+                        <span class="user-icon">
+                            <i class="fa-solid fa-user"></i>
+                        </span>
                         <div class="text">
-
-                            <span class="date text-muted float-md-right"> </span>
-
-                            <h6 class="mb-1"></h6>
+                            <span class="date text-muted float-md-right"> {{review.updated_at}}</span>
+                            <h6 class="mb-1">{{review.user.username}}</h6>
                             <div class="rating-star">
                                 <span>
                                     <i class="fa fa-star{% if review.rating == 0.5 %}-half-o{% elif review.rating < 1 %}-o {% endif %}"
@@ -207,18 +208,12 @@
                         </div>
                     </div>
                     <div class="mt-3">
-
+                        {{review.subject}}
                         <h6 class="mb-1"></h6>
-
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis non, quibusdam accusantium
-                            ex assumenda quaerat magnam voluptatem alias eveniet vitae, sapiente recusandae fuga debitis
-                            ullam voluptatibus eaque cum consectetur commodi itaque. Quo repudiandae perferendis animi,
-                            consequuntur iusto quis sunt, at omnis atque suscipit quos. Corrupti eum corporis laudantium
-                            sunt consectetur!
-
-                        </p>
+                        <p>{{ review.review}}</p>
                     </div>
                 </article>
+                {% endfor %}
 
             </div>
         </div>

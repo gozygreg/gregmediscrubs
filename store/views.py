@@ -61,6 +61,7 @@ def all_products(request):
     return render(request, 'store/store.html', context)
 
 
+@login_required
 def product_detail(request, product_id):
     """ A view to individual product details """
 
@@ -76,10 +77,14 @@ def product_detail(request, product_id):
     except OrderLineItem.DoesNotExist:
         order = None
 
+    # Get the review
+    reviews = ReviewRating.objects.filter(product=product, status=True)
+
     context = {
         'product': product,
         'order': order,
-    }
+        'reviews': reviews,
+        }
 
     return render(request, 'store/product_detail.html', context)
 
