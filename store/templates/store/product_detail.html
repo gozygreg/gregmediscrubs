@@ -125,6 +125,98 @@
             </div>
         </div>
         <br>
+        <div class="row">
+            <div class="col-md-9">
+
+                <form action="" method="POST">
+                    <!-- {% csrf_token %} -->
+                    <h5>Write your Review</h5>
+                    <div>
+                        <!-- Rating stars -->
+                        <label> How do you rate this product? </label>
+                        <br>
+                        <div class="rate">
+                            <input type="radio" name="rating" id="rating10" value="5" title="5"><label
+                                for="rating10"></label>
+                            <input type="radio" name="rating" id="rating9" value="4.5" title="4.5" class="half"><label
+                                for="rating9"></label>
+                            <input type="radio" name="rating" id="rating8" value="4" title="4"><label
+                                for="rating8"></label>
+                            <input type="radio" name="rating" id="rating7" value="3.5" title="3.5" class="half"><label
+                                for="rating7"></label>
+                            <input type="radio" name="rating" id="rating6" value="3" title="3"><label
+                                for="rating6"></label>
+                            <input type="radio" name="rating" id="rating5" value="2.5" title="2.5" class="half"><label
+                                for="rating5"></label>
+                            <input type="radio" name="rating" id="rating4" value="2" title="2"><label
+                                for="rating4"></label>
+                            <input type="radio" name="rating" id="rating3" value="1.5" title="1.5" class="half"><label
+                                for="rating3"></label>
+                            <input type="radio" name="rating" id="rating2" value="1" title="1"><label
+                                for="rating2"></label>
+                            <input type="radio" name="rating" id="rating1" value="0.5" title="0.5" class="half"><label
+                                for="rating1"></label>
+                        </div>
+                        <br>
+
+                        Review Title:
+                        <input type="text" class="form-control" name="subject">
+                        <br>
+                        Review:
+                        <textarea name="review" class="form-control" rows="4"></textarea>
+                        <br>
+                        <!-- {% if user.is_authenticated %}
+                        {% if order %} -->
+                        <input type="submit" class="btn btn-primary" value="Submit Review">
+                        <!-- {% else %} -->
+                        <p>You must have purchased this product to psot a review.</p>
+                        <!-- {% endif %} -->
+                        <!-- {% else %} -->
+                        <p>You must be logged in to post a review. <span><a href="">Login</a></span></p>
+                        <!-- {% endif %} -->
+                    </div>
+
+                </form>
+                <br>
+                <header class="section-heading">
+                    <h3>Customer Reviews</h3>
+                </header>
+                <!-- {% for review in reviews %} -->
+                <article class="box mb-3">
+                    <div class="icontent w-100">
+                        <img src="" class="img-xs icon rounded-circle">
+                        <div class="text">
+                            <!-- review update date -->
+                            <span class="date text-muted float-md-right"> </span>
+                            <!-- review user username -->
+                            <h6 class="mb-1"></h6>
+                            <div class="rating-star">
+                                <span>
+                                    <i class="fa fa-star{% if review.rating == 0.5 %}-half-o{% elif review.rating < 1 %}-o {% endif %}"
+                                        aria-hidden="true"></i>
+                                    <i class="fa fa-star{% if review.rating == 1.5 %}-half-o{% elif review.rating < 2 %}-o {% endif %}"
+                                        aria-hidden="true"></i>
+                                    <i class="fa fa-star{% if review.rating == 2.5 %}-half-o{% elif review.rating < 3 %}-o {% endif %}"
+                                        aria-hidden="true"></i>
+                                    <i class="fa fa-star{% if review.rating == 3.5 %}-half-o{% elif review.rating < 4 %}-o {% endif %}"
+                                        aria-hidden="true"></i>
+                                    <i class="fa fa-star{% if review.rating == 4.5 %}-half-o{% elif review.rating < 5 %}-o {% endif %}"
+                                        aria-hidden="true"></i>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mt-3">
+                        <!-- review subject -->
+                        <h6 class="mb-1"></h6>
+                        <!-- review review -->
+                        <p>
+                        </p>
+                    </div>
+                </article>
+                <!-- {% endfor %} -->
+            </div>
+        </div>
 </div>
 {% endblock %}
 
