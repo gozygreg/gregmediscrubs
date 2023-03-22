@@ -128,8 +128,8 @@
         <div class="row">
             <div class="col-md-9">
 
-                <form action="" method="POST">
-                    <!-- {% csrf_token %} -->
+                <form action="{% url 'submit_review' product.id %}" method="POST">
+                    {% csrf_token %}
                     <h5>Write your Review</h5>
                     <div>
                         <!-- Rating stars -->
@@ -165,15 +165,15 @@
                         Review:
                         <textarea name="review" class="form-control" rows="4"></textarea>
                         <br>
-                        <!-- {% if user.is_authenticated %}
-                        {% if order %} -->
+                        {% if user.is_authenticated %}
                         <input type="submit" class="btn btn-primary" value="Submit Review">
-                        <!-- {% else %} -->
-                        <p>You must have purchased this product to psot a review.</p>
-                        <!-- {% endif %} -->
-                        <!-- {% else %} -->
-                        <p>You must be logged in to post a review. <span><a href="">Login</a></span></p>
-                        <!-- {% endif %} -->
+
+                        <p>You must have purchased this product to post a review.</p>
+                        {% else %}
+                        <p>You must be logged in to post a review. <span><a
+                                    href="{% url 'account_login' %}">Login</a></span></p>
+                        {% endif %}
+
                     </div>
 
                 </form>
@@ -181,14 +181,14 @@
                 <header class="section-heading">
                     <h3>Customer Reviews</h3>
                 </header>
-                <!-- {% for review in reviews %} -->
+
                 <article class="box mb-3">
                     <div class="icontent w-100">
                         <img src="" class="img-xs icon rounded-circle">
                         <div class="text">
-                            <!-- review update date -->
+
                             <span class="date text-muted float-md-right"> </span>
-                            <!-- review user username -->
+
                             <h6 class="mb-1"></h6>
                             <div class="rating-star">
                                 <span>
@@ -207,14 +207,19 @@
                         </div>
                     </div>
                     <div class="mt-3">
-                        <!-- review subject -->
+
                         <h6 class="mb-1"></h6>
-                        <!-- review review -->
-                        <p>
+
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis non, quibusdam accusantium
+                            ex assumenda quaerat magnam voluptatem alias eveniet vitae, sapiente recusandae fuga debitis
+                            ullam voluptatibus eaque cum consectetur commodi itaque. Quo repudiandae perferendis animi,
+                            consequuntur iusto quis sunt, at omnis atque suscipit quos. Corrupti eum corporis laudantium
+                            sunt consectetur!
+
                         </p>
                     </div>
                 </article>
-                <!-- {% endfor %} -->
+
             </div>
         </div>
 </div>
