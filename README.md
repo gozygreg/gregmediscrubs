@@ -1,16 +1,62 @@
-# Greg-Medi-Wears
-Gregmediwear is a fictional hospital attire store designed and implemented with Django, Python, HTML, and CSS. It aims to provide an easy-to-use interface where customers can browse all items at once or sort into specified categories. The site offers search functionality and an inbuilt stock system to ensure users cannot buy things that are not currently in stock. Once signed in, users can save an address to their profile for easy and convenient checkout.
+# Greg-Medi-Scrub
+Gregmediscrub is a fictional hospital attire store designed and implemented with Django, Python, HTML, and CSS. It aims to provide an easy-to-use interface where customers can browse all items at once or sort into specified categories. The site offers search functionality and an inbuilt stock system to ensure users cannot buy things that are not currently in stock. Once signed in, users can save an address to their profile for easy and convenient checkout.
 
-The deployed site can be visited here: <a href="" target="_blank">Gregmediwears</a> for more options.
+The deployed site can be visited here: <a href="" target="_blank">Gregmediscrub</a> for more options.
 
 # Table of Contents
 - [Planning Phase](#planning-phase)
-     - Strategy
-        - Site Aims
-        - Opportunities
-        - Scope
-        - Structure
-            - User Stories:
+    - [Strategy](#strategy)
+        - [Site Aims](#site-aims)
+        - [Scope](#scope)
+        - [Structure](#structure)
+            - [User Stories:](#user-stories)
+        - [Skeleton](#skeleton)
+            - [Wireframes:](#wireframes)
+            - [Database Schema:](#database-schema)
+        - [SEO considerations](#seo-considerations)
+        - [Content](#content)
+        - [Surface](#surface)
+    - [Agile Development Process](#agile-development-process)
+    - [E-commerce Application Type](#e-commerce-application-type)
+    - [Marketing Stratergy](#marketing-stratergy)
+- [Features](#features)
+    - [Common to All Pages](#Common-to-all-pages)
+        - [Navbar](#navbar)
+        - [Footer](#footer)
+        - [Notifications](#notifications)
+    - [Page content](#page-content)
+        - [Home Page](#home-page)
+        - [Products Page](#product-page)
+        - [Product Details Page](#product-detail-page)
+        - [Reviews](#reviews)
+        - [Edit product - frontend form](#edit-product---frontend-form)
+        - [Bag](#bag)
+        - [Checkout](#checkout)
+        - [Checkout Success](#checkout-success)
+        - [Profile](#profile)
+        - [Inquiry](#inquiry)
+        - [Authentication](#authentication)
+        - [Responsive Design](#responsive-design)
+- [Admin Panel for Store Admin](#admin-panel-for-store-admin)
+    - [Admin Panel Overview](#admin-panel-overview)
+        - [Products](#products)
+        - [Messages](#messages)
+        - [Orders](#orders)
+    - [Future Features](#future-features)
+- [Testing Phase](#testing-phase)
+- [Deployment](#deployment)
+- [Technologies used](#technologies-used)
+- [Credits](#credits)
+- [Media](#media)
+
+---
+
+## PLANNING PHASE
+- ### Strategy
+    - ### Site-Aims
+    - ### Scope
+    - ### Structure
+        - ### User Stories:
                 - EPIC 1 - Set up and Deployment:
                 - EPIC 2 - Viewing and Navigation:
                 - EPIC 3 - Registration and User Accounts:
@@ -19,36 +65,36 @@ The deployed site can be visited here: <a href="" target="_blank">Gregmediwears<
                 - EPIC 6 - Admin and Store Management:
                 - EPIC 7 - Product Reviews:
                 - EPIC 8 - Marketing:
-        - Skeleton
-            - Wireframes:
+    - ### Skeleton
+        - ### Wireframes
                 - Home Page:
                 - Products Page:
-                - Product Details Page:
-                - Shopping Cart Page:
+                - Product Details Page
+                - Shopping Bag Page:
                 - Checkout Page:
                 - User Profile Page:
                 - Order Confirmation Page:
-            - Database Schema:
+        - ### Database Schema:
                 - All Products Table
                 - Product Reviews Table
                 - Contact us Table
                 - Order Tables
                 - Profile Table
                 - Full ERD from PgAdmin
-        - SEO considerations
-            - Keywords
-            - Page Titles
-            - Robots.txt and sitemap.xml
-        - Content
-        - Surface
-            - Colour Scheme
-            - Typography
-    - Agile Development Process
-    - E-commerce Application Type
-    - Marketing Stratergy
-- Features
-    - Common to All Pages
-        - Navbar
+    - ### SEO considerations
+        - Keywords
+        - Page Titles
+        - Robots.txt and sitemap.xml
+    - ### Content
+    - ### Surface
+        - Colour Scheme
+        - Typography
+- ### Agile Development Process
+- ### E-commerce Application Type
+- ### Marketing Stratergy
+- ## Features
+    - ### Common to All Pages
+        - ### Navbar
             - Overall Appearance
                 - Desktop
                 - Mobile
@@ -62,57 +108,48 @@ The deployed site can be visited here: <a href="" target="_blank">Gregmediwears<
             - Account menu
                 - Unauthenticated
                 - Authenticated
-            - Cart icon
-        - Footer
+            - Bag icon
+        - ### Footer
             - Desktop
             - Mobile
             - Common Features to both Desktop and Mobile
                 - Social Media Links
                 - Newsletter Sign Up
                 - Sitemap
-        - Notifications
-    - Page content
-        - Home Page
-        - Products Page
-        - Product Details Page
-        - Reviews
+        - ### Notifications
+    - ### Page content
+        - ### Home Page
+        - ### Products Page
+        - ### Product Details Page
+        - ### Reviews
             - Unauthenticated
             - Authenticated
-        - Edit product - frontend form
-        - Shopping Cart
+        - ### Edit product - frontend form
+        - ### Bag
             - Desktop
             - Mobile
-        - Checkout
+        - ### Checkout
             - Desktop
             - Mobile
-        - Checkout Success
-        - Profile
-        - Contact us
-        - Authentication
-        - Stock management system
-        - Age verification pop-up
-        - Responsive Design
-- Admin Panel for Shop Administration
-    - Admin Panel Overview
-        - Products
-        - Messages
-        - Orders
-    - Future Features
-        - Automation of the stock system
-        - Dynamically add nav links for new categories/subcategories
+        - ### Checkout Success
+        - ### Profile
+        - ### Inquiry
+        - ### Authentication
+        - ### Responsive Design
+- ## Admin Panel for Store Admin
+    - ### Admin Panel Overview
+        - ### Products
+        - ### Messages
+        - ### Orders
+    - ### Future Features
+        - Product size
         - Sales reports
-        - Additional shipping choices
         - Additional payment methods
         - Additional user account features
         - Product options
         - Ticketing Sytem
-- Testing Phase
-- Deployment
-- Technologies used
-- Honorable Mentions
-- Credits
-- Media
-
----
-
-## PLANNING PHASE
+- ## Testing Phase
+- ## Deployment
+- ## Technologies used
+- ## Credits
+- ## Media
