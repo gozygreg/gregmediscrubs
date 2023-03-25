@@ -83,6 +83,7 @@ The deployed site can be visited here: <a href="" target="_blank">Gregmediscrub<
                 - Full ERD from PgAdmin
     - ### SEO considerations
         - Keywords
+            - The following keywords were used for the website for optimazation; medical scrubs, scrub uniforms, nursing scrubs, medical uniforms, scrub tops, scrub pants, scrub sets, petite scrubs, tall scrubs, plus size scrubs, maternity scrubs, medical lab coats, dental scrubs, veterinary scrubs, surgical scrubs, healthcare scrubs, hospital scrubs, nursing shoes, compression socks, medical accessories
         - Page Titles
         - Robots.txt and sitemap.xml
     - ### Content
@@ -114,8 +115,7 @@ The deployed site can be visited here: <a href="" target="_blank">Gregmediscrub<
             - Mobile
             - Common Features to both Desktop and Mobile
                 - Social Media Links
-                    - <img width="1440" alt="Gmw facebook buisness page" src="https://user-images.githubusercontent.com/69070044/227708744-9e11349a-ef2e-4501-a58b-5066f740cebb.png">
-
+                     <img width="1440" alt="Gmw facebook buisness page" src="https://user-images.githubusercontent.com/69070044/227708744-9e11349a-ef2e-4501-a58b-5066f740cebb.png">
                 - Newsletter Sign Up
                 - Sitemap
         - ### Notifications

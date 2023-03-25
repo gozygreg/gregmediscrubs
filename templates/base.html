@@ -15,22 +15,36 @@
     {% endblock %}
 
     {% block corecss %}
+    <!-- Bootstrap cdn -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
         integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+    <!-- Google fonts -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato&display=swap">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!-- Custom css -->
     <link rel="stylesheet" href="{% static 'css/base.css' %}">
+
+    <!-- Product rating css -->
     <link rel="stylesheet" href="{% static 'css/product_rating.css' %}">
 
+    <!-- Mailchimp -->
+    <link href="//cdn-images.mailchimp.com/embedcode/classic-071822.css" rel="stylesheet" type="text/css">
     {% endblock %}
 
     {% block extra_css %}
     {% endblock %}
 
     {% block corejs %}
+    <!-- Font awesome -->
     <script src="https://kit.fontawesome.com/7f6773795a.js" crossorigin="anonymous"></script>
+
+    <!-- Jquery -->
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"
         integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+
+    <!-- Bootsrap Js -->
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js"
         integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
@@ -39,6 +53,7 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
         integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous">
     </script>
+
     <!-- Stripe -->
     <script src="https://js.stripe.com/v3/"></script>
     {% endblock %}
@@ -47,6 +62,13 @@
     {% endblock %}
 
     <title>Gregmediscrubs {% block extra_title %}{% endblock %}</title>
+
+    <meta name="description" content="Looking for stylish and comfortable medical uniforms? Look no further than our online store. 
+        We have everything you need to stay comfortable and professional on the job.">
+    <meta name="keywords"
+        content="medical scrubs, scrub uniforms, nursing scrubs, medical uniforms, scrub tops, scrub pants, scrub sets, 
+        petite scrubs, tall scrubs, plus size scrubs, maternity scrubs, medical lab coats, dental scrubs, veterinary 
+        scrubs, surgical scrubs, healthcare scrubs, hospital scrubs, nursing shoes, compression socks, medical accessories">
 </head>
 
 <body>
@@ -160,6 +182,10 @@
     <script type="text/javascript">
         $('.toast').toast('show');
     </script>
+    <!-- Mailchimp script -->
+    <script src="{% static 'js/mailChimp.js' %}"></script>
+    <script src='//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js'></script>
+
     {% endblock %}
 
 
