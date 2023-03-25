@@ -10,19 +10,33 @@
 {% endblock %}
 
 {% block content %}
-<div class="container-fluid h-100 index-img">
-    <div class="row h-100">
-        <div class="col-7 col-md-6 my-auto">
-            <h1 class="logo-font text-white">
-                Gregmediwears! Get comfortable at work
-            </h1>
+<br><br>
+<div class="container">
+    <div class="row">
+        <div class="container-fluid col-md-4 text-center image-container">
+            <div class="left-image-container"></div>
+
+        </div>
+        <div class="container-fluid col-md-4 text-center image-container">
+            <br><br>
+            <h4 class="logo-font">
+                Gregmediscrubs!</h4>
+            <hr>
+            <h5>Get comfortable at work!</h5>
             <div class="my-5">
                 <h4>
                     <a href="{% url 'store' %}"
                         class="shop-now-button btn btn-lg rounded-0 text-uppercase py-3">Shop</a>
                 </h4>
             </div>
+
+        </div>
+        <div class="container-fluid col-md-4 text-center image-container">
+            <div class="right-image-container"></div>
+
         </div>
     </div>
 </div>
+
+<br><br>
 {% endblock %}
