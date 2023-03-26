@@ -45,6 +45,51 @@ body {
     background-image: url('/media/womenfullkit2.webp');
 }
 
+
+/* Adert section on product page  */
+.advert-circle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    background-size: cover;
+    background-position: center;
+    overflow: hidden;
+    transition: all 0.3s ease;
+}
+
+.advert-circle:hover {
+    width: 250px;
+    height: 250px;
+}
+
+.circle-content {
+    display: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.advert-circle:hover .circle-content {
+    display: block;
+}
+
+.circle-img1 {
+    background-image: url('/media/referral-sock.webp');
+}
+
+.circle-img2 {
+    background-image: url('/media/free-scrub-cap.webp');
+}
+
+.circle-img3 {
+    background-image: url('/media/facemask.webp');
+}
+
 /* from Bulma */
 .icon {
     align-items: center;
@@ -356,5 +401,17 @@ a.category-badge>span.badge:hover {
 @media only screen and (min-width: 770px) and (max-width: 1380px) {
     .ratings {
         display: none;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .advert-circle {
+        width: 150px;
+        height: 150px;
+    }
+
+    .advert-circle:hover {
+        width: 200px;
+        height: 200px;
     }
 }

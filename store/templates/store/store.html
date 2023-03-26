@@ -12,23 +12,37 @@
 
 
 {% block content %}
-<!-- Introduction section -->
-<section class="py-4 text-center container-fluid cover-img">
-    <div class="row py-lg-5">
-        <div class="col-lg-6 col-md-8 mx-auto">
-            <h4> Gregmedi<strong>wears</strong>....for your comfort at work! </h4>
-            <br><br>
-            <p class="lead text-muted">
-                Browse our extensive collection.
-            </p>
-            <br><br>
-            <a href="{% url 'account_signup' %}" class="btn btn-primary my-2"><i class="fa fa-user-plus"
-                    aria-hidden="true"></i>&nbsp; Create an
-                account </a>
+<!-- Store promotion section -->
+<br><br>
+<div class="container">
+    <div class="row justify-content-center">
+        <div class="col-md-4">
+            <div class="advert-circle circle-img1 mb-2">
+                <div class="circle-content text-black">
+                    <h2>Freebies</h2>
+                    <p>Refer us to a collegue and get a free compression socks</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="advert-circle circle-img2 mb-2">
+                <div class="circle-content text-black">
+                    <h2>Freebies</h2>
+                    <p>Get a free customised surgical scrub hat for your very first order with us.</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="advert-circle circle-img3 mb-2">
+                <div class="circle-content text-black">
+                    <h2>Freebies</h2>
+                    <p>Keep track of your orders and get a free facemask at your 10th order</p>
+                </div>
+            </div>
         </div>
     </div>
-    </div>
-</section>
+</div>
+<br><br>
 <!-- All products section -->
 <div class="album py-5 bg-light">
     <div class="container">
@@ -78,11 +92,6 @@
                 </p>
             </div>
         </div>
-
-
-
-
-
         <div class="row row-cols-1 row-cols-sm-2 row-cols-md-5 g-3">
             {% for product in products %}
             <div class="col">
