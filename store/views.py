@@ -150,6 +150,7 @@ def delete_product(request, product_id):
     return redirect(reverse('store'))
 
 
+@login_required
 def submit_review(request, product_id):
     url = request.META.get('HTTP_REFERER')
     if request.method == 'POST':
