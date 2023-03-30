@@ -115,6 +115,7 @@
                 <input type="hidden" name="redirect_url" id="redirect-url" value="{{ request.path }}">
             </div>
         </div>
+        {% if request.user.is_superuser %}
         <div class="row g-3 pt-3">
             <div class="col-md-2 offset-md-0">
                 <button class="btn btn-black rounded-0 w-100"><a class="text-white text-uppercase"
@@ -128,6 +129,7 @@
                     </a></button>
             </div>
         </div>
+        {% endif %}
         <br>
         <div class="row">
             <div class="col-md-9">
