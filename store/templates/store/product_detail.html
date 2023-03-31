@@ -16,11 +16,11 @@
             <div class="col-md-5 col-lg-5 order-md-first bg-light">
                 <!-- Product image -->
                 {% if product.image %}
-                <a href="{% url 'product_detail' product.id %}" target="_blank">
-                    <img class="card-img-top img-fluid" src="{{ product.image.url }}" alt="{{ product.name }}">
+                <a href="{{ product.image_url }}" target="_blank">
+                    <img class="card-img-top img-fluid" src="{{ product.image_url }}" alt="{{ product.name }}">
                 </a>
                 {% else %}
-                <a href="{% url 'product_detail' product.id %}">
+                <a href="{{ product.image_url }}">
                     <img class="card-img-top img-fluid" src="{{ MEDIA_URL }}noimage.png" alt="{{ product.name }}">
                 </a>
                 {% endif %}
