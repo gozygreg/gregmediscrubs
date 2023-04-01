@@ -110,7 +110,47 @@ The deployed site can be visited here: <a href="https://gregmediscrubs.herokuapp
         | Total| 127 | 132
 
     - ### Scope
+        Due to limited timeframe for this project and the specific grading criteria, it will be necessary to make additional compromises during the design and development phases. To address this, I will employ an agile methodology and conduct weekly progress reviews. Based on the results of these reviews, I will make decisions about which features to include, modify, or remove in order to meet the deadline and deliver a viable minimum viable product (MVP).
+
+        To prevent the project from expanding beyond its original scope, I have implemented the MoSCoW method to categorize the various requirements according to their importance. This will enable me to prioritize the most critical elements and ensure that I can achieve my ultimate objective of delivering a fully functional MVP by the established deadline.: -
+
+        To create a minimum functional E-commerce site, UX efforts must address these opportunities: -
+        - Full CRUD Functionality.
+        - User login/register.
+        - Checkout system.
+        - Account profile.
+        - Mailing list.
+        - Product Filters/searching.
+        - Stripe payments.
+        - SEO language throughout.
+        - Guest checkout completion.
+        - User Role permissions.
+        - Order History.
+        - Social Media page.
+        - Password Recovery.
+        - Email confirmation of order.
+        - User feedback for actions taken.
+        - Saved customer details on checkout.
+
+        To enhance the customer experience and increase the sites functionality, UX efforts should address these opportunities: -
+        - Product reviews.
+        - Contact form.
+        - Admin can add/remove products via the front end.
+        - Delivery information.
+        - Terms and conditions.
+
+        To increase the sites popularity and customer base, UX efforts could address these opportunities: -
+        - Site advert/promotion.
+        - Video demo of products.
+        - Related products
+        - Ability to edit order until status set to processing.
+            
+        As they are so far out of the scope of this project, UX efforts will not address these opportunities: -
+        - Multiple currencies.
+        - Generate sales reports.
+
     - ### Structure
+
         - ### User Stories:
             - EPIC 1 - Set up and Deployment:
 
@@ -149,14 +189,16 @@ The deployed site can be visited here: <a href="https://gregmediscrubs.herokuapp
                 - As a user, I want to be able to view my order history so that I can keep track of all my purchases
     - ### Skeleton
         - ### Wireframes
-                - Home Page:
-                - Products Page:
-                - Product Details Page
-                - Shopping Bag Page:
-                - Checkout Page:
-                - User Profile Page:
-                - Order Confirmation Page:
+            The Balsamiq wireframing tool was utilized to create visual representations of the website's design and functionality. The wireframes utilized in the layout planning process are provided below. Nonetheless, certain alterations or eliminations were made during the development phase due to limitations of time or feasibility.
+            - Home Page:
+            - Products Page:
+            - Product Details Page
+            - Shopping Bag Page:
+            - Checkout Page:
+            - User Profile Page:
+            - Order Confirmation Page:
         - ### Database Schema:
+            - The database table scheme was created using <a href="https://drawsql.app/" target="_blank">drawsql.app</a> and can be seen below.
                 - All Products Table
                 - Product Reviews Table
                 - Contact us Table
@@ -169,9 +211,13 @@ The deployed site can be visited here: <a href="https://gregmediscrubs.herokuapp
         - Page Titles
         - Robots.txt and sitemap.xml
     - ### Content
+        Due to the nature of the site, there were limited opportunities for textual content. As many of the keywords were product-related, I focused on utilizing heading and semantic tags effectively to ensure a high-quality search rating.
     - ### Surface
+        After planning the project, selecting an appropriate theme became the next step. While aiming for simplicity, I incorporated color to enhance the site's visual appeal. To maintain a clean and user-friendly design, I employed ample white space throughout.
         - Colour Scheme
+            - Although black and white served as the primary colors on the site, I added additional hues to highlight important content and establish a distinct brand identity. The accompanying color grid guided my selection process, although some initial ideas had to be altered based on contrast considerations, which are outlined below.
         - Typography
+            - <a href="https://fonts.google.com/specimen/DM+Sans?query=dm+s" target="_blank">DM Sans</a> was utilized for the primary headings and logo, this font is clean and straightforward, ensuring legibility while also making a bold statement.
 - ### Agile Development Process
 - ### E-commerce Application Type
 - ### Marketing Stratergy
