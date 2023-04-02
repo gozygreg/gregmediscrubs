@@ -244,7 +244,7 @@ The deployed site can be visited here: <a href="https://gregmediscrubs.herokuapp
             - Mobile
             - Common Features to both Desktop and Mobile
                 - Social Media Links
-                     <img width="1440" alt="Gmw facebook buisness page" src="https://user-images.githubusercontent.com/69070044/227708744-9e11349a-ef2e-4501-a58b-5066f740cebb.png">
+                     <img width="1440" alt="Gmw facebook buisness page" src="https://user-images.githubusercontent.com/69070044/229380888-b6bef8b7-410b-4c22-856c-9b8260651f5a.png">
                 - Newsletter Sign Up
                 - Sitemap
         - ### Notifications

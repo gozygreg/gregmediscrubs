@@ -173,6 +173,9 @@ def submit_review(request, product_id):
                 data.save()
                 messages.success(request, 'Thank you! Your review has been submitted')
                 return redirect(url)
+            else:
+                messages.error(request, 'Please correct the errors below.')
+                return HttpResponse('Form is not valid')
 
 
 def is_superuser(user):

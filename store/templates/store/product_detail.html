@@ -173,12 +173,13 @@
                         <br>
                         {% if user.is_authenticated %}
                         {% if order %}
-                        <input type="submit" class="btn btn-primary" value="Submit Review">
+                        <input type="submit" class="btn btn-black rounded-0" value="Submit Review">
                         {% else %}
-                        <p>You must have purchased this product to psot a review.</p>
+                        <p>You must have purchased this product to post a review.</p>
                         {% endif %}
                         {% else %}
-                        <p>You must be logged in to post a review. <span><a href="">Login</a></span></p>
+                        <p>You must be logged in to post a review. <span><a
+                                    href="{% url 'account_login' %}">Login</a></span></p>
                         {% endif %}
                     </div>
 
