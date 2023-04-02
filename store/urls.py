@@ -11,6 +11,6 @@ urlpatterns = [
     # To submit review about a product (Product-review)
     path('submit_review/<int:product_id>/', views.submit_review, name='submit_review'),
 
-    # To view customer general reviews about our e-commerce company
-    path('customer_reviews', views.customer_reviews, name='customer_reviews'),
+    # To view customer testimonials about our e-commerce company
+    path('customer_testimonials', views.customer_testimonials, name='customer_testimonials'),
     ]

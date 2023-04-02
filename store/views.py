@@ -175,5 +175,5 @@ def submit_review(request, product_id):
                 return redirect(url)
 
 
-def customer_reviews(request):
-    return render(request, 'store/customer_reviews.html')
+def customer_testimonials(request):
+    return render(request, 'store/customer_testimonials.html')

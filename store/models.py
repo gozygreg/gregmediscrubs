@@ -45,3 +45,12 @@ class ReviewRating(models.Model):
 
     def __str__(self):
         return self.subject
+
+
+class Testimonial(models.Model):
+    author = models.ForeignKey(User, on_delete=models.CASCADE)
+    image = models.ImageField(null=True, blank=True)
+    message = models.TextField()
+
+    def __str__(self):
+        return f'{self.author.username} - {self.message}'
