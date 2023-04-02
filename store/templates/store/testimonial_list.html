@@ -1,0 +1,37 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block page_header %}
+<div class="container header-container">
+    <div class="row">
+        <div class="col"></div>
+    </div>
+</div>
+{% endblock %}
+
+{% block content %}
+<br><br>
+<h1 class="text-center">Testimonials</h1>
+<div class="my-5">
+
+    <h2 class="text-center">See what our customers say about us!</h2>
+    {% if testimonials %}
+    <ul class="list-group text-center">
+        {% for testimonial in testimonials %}
+        <li class="list-group-item"><a
+                href="{% url 'testimonial_detail' pk=testimonial.pk %}">{{ testimonial.author.username }}</a></li>
+        {% endfor %}
+    </ul>
+    {% else %}
+    <p>No testimonials yet.</p>
+    {% endif %}
+    <br><br>
+    <h4 class="text-center">
+        <a href="{% url 'store' %}" class="shop-now-button btn btn-lg rounded-0 text-uppercase py-3">Shop
+            Now</a>
+    </h4>
+</div>
+
+<br><br>
+
+{% endblock %}

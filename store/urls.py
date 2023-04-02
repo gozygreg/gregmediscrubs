@@ -12,5 +12,9 @@ urlpatterns = [
     path('submit_review/<int:product_id>/', views.submit_review, name='submit_review'),
 
     # To view customer testimonials about our e-commerce company
-    path('customer_testimonials', views.customer_testimonials, name='customer_testimonials'),
-    ]
+    path('testimonial_list/', views.testimonial_list, name='testimonial_list'),
+    path('testimonial_detail/<int:pk>/', views.testimonial_detail, name='testimonial_detail'),
+    path('testimonial_add/', views.add_testimonial, name='add_testimonial'),
+    path('testimonial_edit/<int:pk>/', views.edit_testimonial, name='edit_testimonial'),
+    path('testimonial_delete/<int:pk>/', views.delete_testimonial, name='delete_testimonial'),
+]

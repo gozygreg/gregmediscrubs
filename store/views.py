@@ -1,12 +1,12 @@
 from django.shortcuts import render, redirect, reverse, get_object_or_404
 from django.http import HttpResponse
 from django.contrib import messages
-from django.contrib.auth.decorators import login_required
+from django.contrib.auth.decorators import login_required, user_passes_test
 from django.db.models import Q
 from django.db.models.functions import Lower
-from .models import Product, Category, ReviewRating
+from .models import Product, Category, ReviewRating, Testimonial
 from checkout.models import Order, OrderLineItem
-from .forms import ProductForm, ReviewForm
+from .forms import ProductForm, ReviewForm, TestimonialForm
 from django.contrib.auth.models import User
 
 
@@ -175,5 +175,54 @@ def submit_review(request, product_id):
                 return redirect(url)
 
 
-def customer_testimonials(request):
-    return render(request, 'store/customer_testimonials.html')
+def is_superuser(user):
+    return user.is_superuser
+
+@login_required
+@user_passes_test(is_superuser)
+def add_testimonial(request):
+    if request.method == 'POST':
+        form = TestimonialForm(request.POST)
+        if form.is_valid():
+            testimonial = form.save(commit=False)
+            testimonial.author = request.user
+            testimonial.save()
+            messages.success(request, 'Testimonial added successfully.')
+            return redirect('testimonial_list')
+    else:
+        form = TestimonialForm()
+    return render(request, 'store/add_testimonial.html', {'form': form})
+
+
+@login_required
+@user_passes_test(is_superuser)
+def edit_testimonial(request, pk):
+    testimonial = get_object_or_404(Testimonial, pk=pk)
+    if request.method == 'POST':
+        form = TestimonialForm(request.POST, instance=testimonial)
+        if form.is_valid():
+            form.save()
+            messages.success(request, 'Testimonial updated successfully.')
+            return redirect('testimonial_list')
+    else:
+        form = TestimonialForm(instance=testimonial)
+    return render(request, 'store/edit_testimonial.html', {'form': form})
+
+
+@login_required
+@user_passes_test(is_superuser)
+def delete_testimonial(request, pk):
+    testimonial = get_object_or_404(Testimonial, pk=pk)
+    testimonial.delete()
+    messages.success(request, 'Testimonial deleted successfully.')
+    return redirect('testimonial_list')
+
+
+def testimonial_list(request):
+    testimonials = Testimonial.objects.all()
+    return render(request, 'store/testimonial_list.html', {'testimonials': testimonials})
+
+
+def testimonial_detail(request, pk):
+    testimonial = get_object_or_404(Testimonial, pk=pk)
+    return render(request, 'store/testimonial_detail.html', {'testimonial': testimonial})

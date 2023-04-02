@@ -1,0 +1,43 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block page_header %}
+<div class="container header-container">
+    <div class="row">
+        <div class="col"></div>
+    </div>
+</div>
+{% endblock %}
+
+{% block content %}
+<br><br>
+<div class="container">
+    <div class="row justify-content-center">
+        <div class="col-md-8">
+            <h2>Testimonial Detail</h2>
+            <div class="row">
+                <div class="col-md-4 text-center">
+                    {% if testimonial.image %}
+                    <img src="{{ testimonial.image.url }}" alt="Testimonial image" class="img-fluid rounded-circle">
+                    {% endif %}
+                </div>
+                <div class="col-md-8">
+                    <p><strong>Author:</strong> {{ testimonial.author.username }}</p>
+                    <p>{{ testimonial.message }}</p>
+                </div>
+            </div>
+            {% if user.is_superuser %}
+            <div class="row">
+                <div class="col-md-8 offset-md-4">
+                    <a href="{% url 'edit_testimonial' testimonial.id %}" class="btn btn-primary btn-sm">Edit</a>
+                    <form action="{% url 'delete_testimonial' testimonial.id %}" method="post" style="display: inline">
+                        {% csrf_token %}
+                        <button type="submit" class="btn btn-danger btn-sm">Delete</button>
+                    </form>
+                </div>
+            </div>
+            {% endif %}
+        </div>
+    </div>
+</div>
+{% endblock %}
