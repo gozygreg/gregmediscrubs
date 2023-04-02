@@ -30,4 +30,4 @@ class ReviewForm(forms.ModelForm):
 class TestimonialForm(forms.ModelForm):
     class Meta:
         model = Testimonial
-        fields = ('image', 'message')
+        fields = ('name', 'message', 'image' )

@@ -14,7 +14,8 @@
 <div class="container">
     <div class="row justify-content-center">
         <div class="col-md-8">
-            <h2>Testimonial Detail</h2>
+            <h2 class="text-center">Testimonial Detail</h2>
+            <hr>
             <div class="row">
                 <div class="col-md-4 text-center">
                     {% if testimonial.image %}
@@ -22,7 +23,7 @@
                     {% endif %}
                 </div>
                 <div class="col-md-8">
-                    <p><strong>Author:</strong> {{ testimonial.author.username }}</p>
+                    <p><strong>Customer:</strong> {{ testimonial.name }}</p>
                     <p>{{ testimonial.message }}</p>
                 </div>
             </div>

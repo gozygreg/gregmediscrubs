@@ -19,11 +19,19 @@
     <ul class="list-group text-center">
         {% for testimonial in testimonials %}
         <li class="list-group-item"><a
-                href="{% url 'testimonial_detail' pk=testimonial.pk %}">{{ testimonial.author.username }}</a></li>
+                href="{% url 'testimonial_detail' pk=testimonial.pk %}">{{ testimonial.name }}</a></li>
         {% endfor %}
     </ul>
     {% else %}
     <p>No testimonials yet.</p>
+    {% endif %}
+    <br>
+    {% if user.is_superuser %}
+
+    <div class="text-black text-center">
+        <a href="{% url 'add_testimonial' %}" class="btn btn-black btn-sm btn-outline-black">Add Testimonials</a>
+    </div>
+
     {% endif %}
     <br><br>
     <h4 class="text-center">

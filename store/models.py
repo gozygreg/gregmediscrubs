@@ -48,6 +48,7 @@ class ReviewRating(models.Model):
 
 
 class Testimonial(models.Model):
+    name = models.CharField(max_length=100, default='')
     author = models.ForeignKey(User, on_delete=models.CASCADE)
     image = models.ImageField(null=True, blank=True)
     message = models.TextField()

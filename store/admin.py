@@ -24,7 +24,7 @@ class CategoryAdmin(admin.ModelAdmin):
 
 
 class TestimonialAdmin(admin.ModelAdmin):
-    list_display = ('author', 'message', 'image')
+    list_display = ('name', 'author', 'message', 'image')
     readonly_fields = ('author',)
 
     def save_model(self, request, obj, form, change):
