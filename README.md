@@ -191,12 +191,21 @@ The deployed site can be visited here: <a href="https://gregmediscrubs.herokuapp
         - ### Wireframes
             The Balsamiq wireframing tool was utilized to create visual representations of the website's design and functionality. The wireframes utilized in the layout planning process are provided below. Nonetheless, certain alterations or eliminations were made during the development phase due to limitations of time or feasibility.
             - Home Page:
+            ![WireframeHomePageDesktop](https://user-images.githubusercontent.com/69070044/229642008-2451aa1b-7608-4b36-a5a4-1dc703cd0b07.jpg)
             - Products Page:
+            ![WireframeProductpageDesktop](https://user-images.githubusercontent.com/69070044/229642474-ecfae5b0-4e67-4a20-8f7e-27d71ddb4131.jpg)
             - Product Details Page
-            - Shopping Bag Page:
+            ![WireframeProductDetailDeskstop](https://user-images.githubusercontent.com/69070044/229642504-655f87ed-84ae-42c8-8645-53e74dd53e30.jpg)
             - Checkout Page:
+            ![WireframeCheckoutDesktop](https://user-images.githubusercontent.com/69070044/229642533-df41d14f-b998-461e-8d96-f6e42d007524.jpg)
             - User Profile Page:
-            - Order Confirmation Page:
+            ![WireframeProfilepageDesktop](https://user-images.githubusercontent.com/69070044/229642555-21f1433d-96a3-4031-9ba2-32fa83b915f2.jpg)
+            - Testimonial List Page:
+            ![WireframeTestimonilalistDesttop](https://user-images.githubusercontent.com/69070044/229642598-c59531b8-a123-458e-9769-d377825938d4.jpg)
+            - Testimonial Detail Page:
+            ![WireframeTestinonialDetailDesktop](https://user-images.githubusercontent.com/69070044/229642610-8628de48-3648-4c4b-a461-b0b70c1ef80f.jpg)
+            - Inquiry Page:
+            ![WireframeInquiryDesktop](https://user-images.githubusercontent.com/69070044/229642579-8f6cd851-c872-4950-b68b-7942e6e76966.jpg)
         - ### Database Schema:
             - The database table scheme was created using <a href="https://drawsql.app/" target="_blank">drawsql.app</a> and can be seen below.
                 - All Products Table
