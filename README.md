@@ -207,13 +207,14 @@ The deployed site can be visited here: <a href="https://gregmediscrubs.herokuapp
             - Inquiry Page:
             ![WireframeInquiryDesktop](https://user-images.githubusercontent.com/69070044/229642579-8f6cd851-c872-4950-b68b-7942e6e76966.jpg)
         - ### Database Schema:
-            - The database table scheme was created using <a href="https://drawsql.app/" target="_blank">drawsql.app</a> and can be seen below.
-                - All Products Table
-                - Product Reviews Table
-                - Contact us Table
-                - Order Tables
-                - Profile Table
-                - Full ERD from PgAdmin
+            - The database table scheme was created using <a href="https://drawsql.app/" target="_blank">drawsql.app</a> is explained below.
+                - A Category can have multiple Products, but a Product belongs to only one Category. This is represented by a one-to-many relationship between Category and Product.
+                - A Product can have multiple ReviewRatings, and each ReviewRating is associated with one Product and one User. This is represented by a many-to-one relationship between Product and ReviewRating, and a many-to-one relationship between User and ReviewRating.
+                - A User can have multiple Testimonials, but each Testimonial is associated with one User. This is represented by a one-to-many relationship between User and Testimonial.
+                - A User can have one UserProfile, but each UserProfile is associated with one User. This is represented by a one-to-one relationship between User and UserProfile.
+                - A CustomerInquiry can have multiple InternalCommunicationNotes, but each InternalCommunicationNotes is associated with only one CustomerInquiry. This is represented by a one-to-many relationship between CustomerInquiry and InternalCommunicationNotes.
+                - An Order can have multiple OrderLineItems, and each OrderLineItem is associated with one Order and one Product. This is represented by a many-to-one relationship between Order and OrderLineItem, and a many-to-one relationship between Product and OrderItem. An Order is associated with one UserProfile, but a UserProfile can be associated with multiple Orders. This is represented by a many-to-one relationship between UserProfile and Order.
+                - Full ERD from PgAdmin: <a href="https://drawsql.app/teams/greg-7/diagrams/erd-gregmediscrubs" target="_blank">Database Models</a> 
     - ### SEO considerations
         - Keywords
             - The following keywords were used for the website for optimazation; medical scrubs, scrub uniforms, nursing scrubs, medical uniforms, scrub tops, scrub pants, scrub sets, petite scrubs, tall scrubs, plus size scrubs, maternity scrubs, medical lab coats, dental scrubs, veterinary scrubs, surgical scrubs, healthcare scrubs, hospital scrubs, nursing shoes, compression socks, medical accessories
