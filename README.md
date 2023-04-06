@@ -292,7 +292,39 @@ The deployed site can be visited here: <a href="https://gregmediscrubs.herokuapp
 - ## Testing Phase
 - ## Deployment
     - The deployed site can be visited here: <a href="https://gregmediscrubs.herokuapp.com/" target="_blank">Gregmediscrub</a>. 
-    - I have included details of my initial deployment in a separate document called DEPLOYMENT.md.
+    - I have included details of my initial deployment in a separate document called [DEPLOYMENT.md](./DEPLOYMENT.md).
 - ## Technologies used
+    - Python:
+        - The packages installed for the project can be found in the [requirements.txt](./requirements.txt)
+    - Django:
+        - as the python framework in the project.
+    - Django all auth:
+        - to handle user authentication and related tasks i.e. sign in, sign up, sign out.
+    - Heroku:
+        - for deployment.
+    - Heroku PostgreSQL & ElephantSQL:
+        - for database during deployment.
+    - SQLlite3:
+        - used during development as a database to test models.
+    - HTML:
+        - the base language used to lay out the skeleton of all templates.
+    - CSS:
+        - to style the page and make the appearance look a little more unique.
+    - Javascript:
+        - to manipulate the DOM and communicate with the backend to create, read, update, and delete data from the database.
+    - jQuery:
+        - to simplify the use of Javascript.
+    - Jinja:
+        - templating language used to implement the views.py logic and models.py data into a template so it could be displayed to the user.
+    - Bootstrap:
+        - to style HTML, CSS.
+    - Font awesome:
+        - For icons.
+    - AWS S3:
+        - to store static and media files.
+    - Stripe:
+        - to handle payments.
 - ## Credits
+    - I am very grateful to <a href="https://www.wearfigs.com/pages/women-home" target="_blank">FIGS</a> for allowing me to use their images
 - ## Media
+    - All image for this project was gotten from <a href="https://www.wearfigs.com/pages/women-home" target="_blank">FIGS</a>

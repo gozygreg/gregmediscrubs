@@ -2,17 +2,17 @@
 ## Table of Contents
 - ### [Initial Deployment](#initial-deployment)
     - [Create Repository](#create-repository)
-    - [Setting up the Workspace (To be done locally via the console of your chosen editor)]()
-    - [Create Heroku App]()
-    - [AWS S3 Bucket]()
-    - [Creating Environmental Variables Locally]()
-    - [Setting up setting.py File]()
-    - [Set up Heroku for use via the console]()
+    - [Setting up the Workspace (To be done locally via the console of your chosen editor)](#setting-up-the-workspace-to-be-done-locally-via-the-console-of-your-chosen-editor)
+    - [Create Heroku App](#create-heroku-app)
+    - [AWS S3 Bucket](#aws-s3-bucket)
+    - [Creating Environmental Variables Locally](#creating-environmental-variables-locally)
+    - [Setting up setting.py File](#setting-up-settingpy-file)
+    - [Set up Heroku for use via the console](#set-up-heroku-for-use-via-the-console)
 
 
 ## Initial Deployment
 Below are the steps taken to deploy the site to Heroku and any console commands required to initiate it.
-- Create Repository
+- ## Create Repository
     1. Create a new repository in GitHub and clone it locally by <a href="https://docs.github.com/en/repositories/creating-and-managing-repositories/cloning-a-repository" target="_blank">following these instructions</a>
         - Note - If you are cloning my project, then you can skip all pip installs below and just run the following command in the terminal to install all the required libraries/packages at once:
             - pip install -r requirements.txt
@@ -33,9 +33,9 @@ Below are the steps taken to deploy the site to Heroku and any console commands 
         - pip freeze --local > requirements.txt
     7. Create an empty folder for your project in your chosen location.
     8. Create a project in the above folder:
-        - django-admin startproject <PROJECT_NAME> (in the case of this project, the project name was "vapeshop")
+        - django-admin startproject <PROJECT_NAME> 
     9. Create an app within the project:
-        - python manage.py startapp APP_NAME (in the case of this project, the app name was "job_search")
+        - python manage.py startapp APP_NAME
     10. Add a new app to the list of installed apps in setting.py
     11. Migrate changes:
         - python manage.py migrate
@@ -47,7 +47,7 @@ The below works on the assumption that you already have an account with Heroku a
 1. Create a new Heroku app:
     - Click "New" in the top right-hand corner of the landing page, then click "Create new app."
 2. Give the app a unique name:
-    - Will form part of the URL (in the case of this project, I called the Heroku app jobs-a-gooden)
+    - Will form part of the URL 
 3. Select the nearest location:
 For me, this was Europe.
 4. Add Database to the Heroku app:
@@ -60,9 +60,7 @@ For me, this was Europe.
 
 ## AWS S3 BUCKET
 The below works on the assumption that you already have an account with AWS and are already signed in.
-
 1. Create a new S3 bucket:
-
     - Click "Services" in the top left-hand corner of the landing page, click on "Storage" then click "S3."
     - Click "Create bucket."
     - Give the bucket a unique name:
@@ -71,11 +69,8 @@ The below works on the assumption that you already have an account with AWS and 
     - Under the "Object Ownership" section, select "ACLS enabled"
     - Under the "Block Public Access settings for this bucket" section, untick "Block all public access" and tick the box to acknowledge that this will make the bucket public.
     - Click "Create bucket."
-
 2. Amend Bucket settings:
-
     - Bucket Properties: -
-
         - Click on the bucket name to open the bucket.
         - Click on the "Properties" tab.
         - Under the "Static website hosting" section, click "Edit."
@@ -84,11 +79,9 @@ The below works on the assumption that you already have an account with AWS and 
         - Under the "Index document" section enter "index.html".
         - Click "Save changes."
     - Bucket Permissions: -
-
         - Click on the "Permissions" tab.
         - Scroll down to the "CORS configuration" section and click edit.
-        - Enter the following snippet into the text box:
-        
+        - Enter the following snippet into the text box:       
            ``` [
                 {
                     "AllowedHeaders": [
@@ -118,16 +111,13 @@ The below works on the assumption that you already have an account with AWS and 
         - Click "Save changes."
         - When back on the buckets permissions tab, scroll down to the "Access Control List" section and click "Edit."
         - enable "List" for "Everyone (public access)", tick the box to accept that "I understand the effects of these changes on my objects and buckets." and click "Save changes."
-
 3. Create AWS static files User and assign to S3 Bucket:
-
     - Create "User Group": -
         - Click "Services" in the top left-hand corner of the landing page, from the left side of the menu click on "Security, Identity, & Compliance" and select "IAM" from the right side of the menu.
         - Under "Access management" click "User Groups."
         - Click "Create Group."
-        - Enter a user name (in the case of this project, I called the user group "manage-pp5-vapeshop").
+        - Enter a user name (in the case of this project, I called the user group "manage-gregmediscrubs").
         - Scroll to the bottom of the page and click "Create Group."
-
     - Create permissions policy for the new user group: -
         - Click "Policies" in the left-hand menu.
         - Click "Create Policy."
@@ -142,7 +132,6 @@ The below works on the assumption that you already have an account with AWS and 
         - Enter a name for the policy (in the case of this project, I called the policy "gregmediscrubs").
         - Enter a description for the policy.
         - Click "Create Policy."
-
     - Attach Policy to User Group: -
         - Click "User Groups" in the left-hand menu.
         - Click on the user group name created during the above step.
@@ -150,7 +139,6 @@ The below works on the assumption that you already have an account with AWS and 
         - click "Attach Policy."
         - Search for the policy created during the above step, and select it.
         - Click "Attach Policy."
-
     - Create User: -
         - Click "Users" in the left-hand menu.
         - Click "Add user."
@@ -165,12 +153,9 @@ The below works on the assumption that you already have an account with AWS and 
         - Take note of the "Access key ID" and "Secret access key" as these will be needed to connect to the S3 bucket.
         - Click "Download .csv" to download the credentials.
         - Click "Close."
-
 4. Install required packages to used AWS S3 Bucket in Django:
-
     - pip install boto3
     - pip install django-storages
-
 5. Add 'storages' to the bottom of the installed apps section of settings.py file:
 ```
  INSTALLED_APPS = [
@@ -180,9 +165,7 @@ The below works on the assumption that you already have an account with AWS and 
 ]
 ```
 
-
 ## Creating Environmental Variables Locally
-
 1. Install dotenv package:
     - pip install python-dotenv
 2. On your local machine, create a file called ".env" at the same level as settings.py and add this to the .gitignore file.
@@ -192,16 +175,18 @@ The below works on the assumption that you already have an account with AWS and 
     - DEVELOPMENT=development
 
 ## Setting up setting.py File
-1. At the top of your settings.py file, add the following snippet immediately after the other imports:
+1. At the top of your settings.py file, add the following snippet:
 ```
- import os
-    import dj_database_url
-    if os.path.isfile('vapeshop/.env'):  
-        from dotenv import load_dotenv  
-        load_dotenv()
+import os
+import dj_database_url
+from pathlib import Path
 
-    SECRET_KEY = os.environ.get("SECRET_KEY")
-    DEBUG = "DEVELOPMENT" in os.environ
+if os.path.exists("env.py"):
+    import env
+
+SECRET_KEY = os.environ.get('SECRET_KEY', '')
+
+DEBUG = 'DEVELOPMENT' in os.environ
 ```
 2. Add a conditional in setting.py DATABASES section by replacing it with the following snippet to link up the Heroku Postgres server when in production and SQLite3 when developing locally:
 ```
@@ -299,3 +284,21 @@ TEMPLATES = [
     class MediaStorage(S3Boto3Storage):
         location = settings.MEDIAFILES_LOCATION
 ```
+
+### Set up Heroku for use via the console
+
+1. Click on Account Settings (under the avatar menu)
+2. Scroll down to the API Key section and click Reveal. Copy the API key.
+3. Log in to Heroku via the console and enter your details.
+    - heroku login-i
+    - When prompted, enter your Heroku username
+    - Enter copied API key as the password   
+4. Get your app name from Heroku
+    - heroku apps
+5. Set Heroku remote
+    - heroku git:remote -a <app_name>
+6. Add, Commit, Pust to GitHub:
+    - git add . && git commit -m "Deploy to Heroku via CLI"
+7. Push to GitHub and Heroku
+    - git push origin main
+    - git push heroku main
