@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset
+      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+<!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
+
+
+<url>
+  <loc>https://gregmediscrubs.herokuapp.com/</loc>
+  <lastmod>2023-04-06T13:51:26+00:00</lastmod>
+  <priority>1.00</priority>
+</url>
+<url>
+  <loc>https://gregmediscrubs.herokuapp.com/accounts/signup/</loc>
+  <lastmod>2023-04-06T13:51:26+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://gregmediscrubs.herokuapp.com/accounts/login/</loc>
+  <lastmod>2023-04-06T13:51:26+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://gregmediscrubs.herokuapp.com/bag/</loc>
+  <lastmod>2023-04-06T13:51:26+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://gregmediscrubs.herokuapp.com/store/?sort=price&amp;direction=asc</loc>
+  <lastmod>2023-04-06T13:51:26+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://gregmediscrubs.herokuapp.com/store/?sort=rating&amp;direction=desc</loc>
+  <lastmod>2023-04-06T13:51:26+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://gregmediscrubs.herokuapp.com/store/?sort=category&amp;direction=asc</loc>
+  <lastmod>2023-04-06T13:51:26+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://gregmediscrubs.herokuapp.com/store/</loc>
+  <lastmod>2023-04-06T13:51:26+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://gregmediscrubs.herokuapp.com/store/?category=Men</loc>
+  <lastmod>2023-04-06T13:51:26+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://gregmediscrubs.herokuapp.com/store/?category=Women</loc>
+  <lastmod>2023-04-06T13:51:26+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://gregmediscrubs.herokuapp.com/store/?category=Men,Women,Surgical,Nonsterile</loc>
+  <lastmod>2023-04-06T13:51:26+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://gregmediscrubs.herokuapp.com/store/?category=Surgical</loc>
+  <lastmod>2023-04-06T13:51:26+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://gregmediscrubs.herokuapp.com/store/?category=Nonsterile</loc>
+  <lastmod>2023-04-06T13:51:26+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://gregmediscrubs.herokuapp.com/store/testimonial_list/</loc>
+  <lastmod>2023-04-06T13:51:26+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://gregmediscrubs.herokuapp.com/inquiry/</loc>
+  <lastmod>2023-04-06T13:51:26+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://gregmediscrubs.herokuapp.com/accounts/password/reset/</loc>
+  <lastmod>2023-04-06T13:51:26+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://gregmediscrubs.herokuapp.com/accounts/login/?next=/store/9/</loc>
+  <lastmod>2023-04-06T13:51:26+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://gregmediscrubs.herokuapp.com/accounts/login/?next=/store/8/</loc>
+  <lastmod>2023-04-06T13:51:26+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://gregmediscrubs.herokuapp.com/accounts/login/?next=/store/5/</loc>
+  <lastmod>2023-04-06T13:51:26+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://gregmediscrubs.herokuapp.com/accounts/login/?next=/store/6/</loc>
+  <lastmod>2023-04-06T13:51:26+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://gregmediscrubs.herokuapp.com/accounts/login/?next=/store/10/</loc>
+  <lastmod>2023-04-06T13:51:26+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://gregmediscrubs.herokuapp.com/accounts/login/?next=/store/1/</loc>
+  <lastmod>2023-04-06T13:51:26+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://gregmediscrubs.herokuapp.com/accounts/login/?next=/store/2/</loc>
+  <lastmod>2023-04-06T13:51:26+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://gregmediscrubs.herokuapp.com/accounts/login/?next=/store/4/</loc>
+  <lastmod>2023-04-06T13:51:26+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://gregmediscrubs.herokuapp.com/accounts/login/?next=/store/7/</loc>
+  <lastmod>2023-04-06T13:51:26+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://gregmediscrubs.herokuapp.com/store/testimonial_detail/5/</loc>
+  <lastmod>2023-04-06T13:51:26+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://gregmediscrubs.herokuapp.com/store/testimonial_detail/2/</loc>
+  <lastmod>2023-04-06T13:51:26+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://gregmediscrubs.herokuapp.com/accounts/signup/?next=%2Fstore%2F9%2F</loc>
+  <lastmod>2023-04-06T13:51:26+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://gregmediscrubs.herokuapp.com/accounts/signup/?next=%2Fstore%2F8%2F</loc>
+  <lastmod>2023-04-06T13:51:26+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://gregmediscrubs.herokuapp.com/accounts/signup/?next=%2Fstore%2F5%2F</loc>
+  <lastmod>2023-04-06T13:51:26+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://gregmediscrubs.herokuapp.com/accounts/signup/?next=%2Fstore%2F6%2F</loc>
+  <lastmod>2023-04-06T13:51:26+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://gregmediscrubs.herokuapp.com/accounts/signup/?next=%2Fstore%2F10%2F</loc>
+  <lastmod>2023-04-06T13:51:26+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://gregmediscrubs.herokuapp.com/accounts/signup/?next=%2Fstore%2F1%2F</loc>
+  <lastmod>2023-04-06T13:51:26+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://gregmediscrubs.herokuapp.com/accounts/signup/?next=%2Fstore%2F2%2F</loc>
+  <lastmod>2023-04-06T13:51:26+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://gregmediscrubs.herokuapp.com/accounts/signup/?next=%2Fstore%2F4%2F</loc>
+  <lastmod>2023-04-06T13:51:26+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://gregmediscrubs.herokuapp.com/accounts/signup/?next=%2Fstore%2F7%2F</loc>
+  <lastmod>2023-04-06T13:51:26+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://gregmediscrubs.herokuapp.com/accounts/login/?next=%2Fstore%2F9%2F</loc>
+  <lastmod>2023-04-06T13:51:26+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://gregmediscrubs.herokuapp.com/accounts/login/?next=%2Fstore%2F8%2F</loc>
+  <lastmod>2023-04-06T13:51:26+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://gregmediscrubs.herokuapp.com/accounts/login/?next=%2Fstore%2F5%2F</loc>
+  <lastmod>2023-04-06T13:51:26+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://gregmediscrubs.herokuapp.com/accounts/login/?next=%2Fstore%2F6%2F</loc>
+  <lastmod>2023-04-06T13:51:26+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://gregmediscrubs.herokuapp.com/accounts/login/?next=%2Fstore%2F10%2F</loc>
+  <lastmod>2023-04-06T13:51:26+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://gregmediscrubs.herokuapp.com/accounts/login/?next=%2Fstore%2F1%2F</loc>
+  <lastmod>2023-04-06T13:51:26+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://gregmediscrubs.herokuapp.com/accounts/login/?next=%2Fstore%2F2%2F</loc>
+  <lastmod>2023-04-06T13:51:26+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://gregmediscrubs.herokuapp.com/accounts/login/?next=%2Fstore%2F4%2F</loc>
+  <lastmod>2023-04-06T13:51:26+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://gregmediscrubs.herokuapp.com/accounts/login/?next=%2Fstore%2F7%2F</loc>
+  <lastmod>2023-04-06T13:51:26+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+
+
+</urlset>
