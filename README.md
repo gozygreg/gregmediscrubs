@@ -235,54 +235,129 @@ The deployed site can be visited here: <a href="https://gregmediscrubs.herokuapp
 - ## Features
     - ### Common to All Pages
         - ### Navbar
-            - Overall Appearance
-                - Desktop
-                - Mobile
-            - Common Navbar Features for both Desktop and Mobile
-                - Logo
-                    - Desktop
-                    - Mobile
-                - Search Bar
-                    - Desktop
-                    - Mobile
+            - Desktop
+            <img width="1000" alt="header-dv" src="https://user-images.githubusercontent.com/69070044/230581318-efc69a72-d44e-464f-b27d-69a3ec7b9ad1.png">
+            - Mobile
+            <img width="350" alt="header-mv" src="https://user-images.githubusercontent.com/69070044/230581479-7c1f888a-4c9b-4f78-ac5d-0f091a4090a5.png">
+            <img width="350" alt="nav-bar-mobile" src="https://user-images.githubusercontent.com/69070044/230593234-6a8c9d0c-468b-4bd9-beaf-74fedea20979.png">
             - Account menu
                 - Unauthenticated
+                <img width="350" alt="account-unauthenticated" src="https://user-images.githubusercontent.com/69070044/230594669-08f62c1a-ae3a-4a5b-95d9-c9d2ec17e378.png">
                 - Authenticated
+                <img width="350" alt="account-authenticated" src="https://user-images.githubusercontent.com/69070044/230594622-c786b2f1-fdae-4cdc-8ccf-6721e3ad1440.png">
+                - Super User/Admin
+                <img width="1000" alt="account-superuser" src="https://user-images.githubusercontent.com/69070044/230593240-4c981742-36d6-4c69-97d7-dbcc331e0f48.png">
             - Bag icon
+            <img width="350" alt="bag-icon" src="https://user-images.githubusercontent.com/69070044/230593254-d9cb1094-c815-4ddb-8289-fe8972df879a.png">
+            - Message notifications
+            <img width="350" alt="message notifications-mv" src="https://user-images.githubusercontent.com/69070044/230593236-1ba101a8-21cb-4963-b476-5a1e5ac54504.png">
+            <img width="1000" alt="message-notification-dv" src="https://user-images.githubusercontent.com/69070044/230593239-b46e21e4-f262-4c46-b7e0-fbf586bb4588.png">
+
+
         - ### Footer
             - Desktop
+            <img width="1000" alt="footer-dv" src="https://user-images.githubusercontent.com/69070044/230580535-1f75190e-8e26-41fd-b9da-8df423024abe.png">
             - Mobile
+            <img width="350" alt="footer-mv" src="https://user-images.githubusercontent.com/69070044/230580574-612edad8-1885-4487-a355-fd5d2e120ea4.png">
             - Common Features to both Desktop and Mobile
                 - Social Media Links
-                     <img width="1440" alt="Gmw facebook buisness page" src="https://user-images.githubusercontent.com/69070044/229380888-b6bef8b7-410b-4c22-856c-9b8260651f5a.png">
+                     <img width="1000" alt="Gmw facebook buisness page" src="https://user-images.githubusercontent.com/69070044/229380888-b6bef8b7-410b-4c22-856c-9b8260651f5a.png">
                 - Newsletter Sign Up
                 - Sitemap
+                <img width="1000" alt="sitemap" src="https://user-images.githubusercontent.com/69070044/230581556-281d205b-7f16-4a7c-81b7-b2b2f019c581.png">
         - ### Notifications
     - ### Page content
         - ### Home Page
+            - Desktop
+            <img width="1000" alt="home-page-dv" src="https://user-images.githubusercontent.com/69070044/230580158-a3709679-0626-46bf-9341-d205fc07a247.png">
+            - Mobile
+            <img width="350" alt="home-page-mv" src="https://user-images.githubusercontent.com/69070044/230580185-d7d480eb-e457-4504-aeb6-0d81136ea137.png">
         - ### Products Page
+            - Desktop
+            <img width="1000" alt="product-page-dv" src="https://user-images.githubusercontent.com/69070044/230580465-4369af91-7566-4fef-bcb2-d299c297e4db.png">
+            - Mobile
+            <img width="350" alt="product-page-mv" src="https://user-images.githubusercontent.com/69070044/230580495-cec54dcd-38e5-4143-b95b-ece44d2efc25.png">
         - ### Product Details Page
+            - Desktop
+
+            - Mobile
+            <img width="350" alt="product-detail-mv" src="https://user-images.githubusercontent.com/69070044/230593253-f3efcba2-6483-41cb-80f9-4205ff0966d7.png">
         - ### Reviews
-            - Unauthenticated
-            - Authenticated
+            Only authenticated users that have purchased a product can review the product.
+            - Desktop
+            <img width="1000" alt="reviews-section-dv" src="https://user-images.githubusercontent.com/69070044/230580773-d0b1826e-9447-45c0-9e92-2147356379a0.png">
+            - Mobile
+            <img width="350" alt="reviews-section-mv" src="https://user-images.githubusercontent.com/69070044/230580810-78882c5a-68af-479d-a8b8-47b6563cf0a9.png">
         - ### Edit product - frontend form
+            Only site admin have access to edit or delete a product. Below is the product edit from
+            <img width="1000" alt="product-edit-page" src="https://user-images.githubusercontent.com/69070044/230597856-d189e0ad-a49f-4db6-b237-380c543b55b5.png">
         - ### Bag
             - Desktop
+            <img width="1000" alt="bag-page-dv" src="https://user-images.githubusercontent.com/69070044/230580233-93f2f331-358b-4aae-9dec-aabe088cbe40.png">
             - Mobile
+            <img width="350" alt="bag-page-mv" src="https://user-images.githubusercontent.com/69070044/230580251-fae07268-7995-498c-a277-f32e77a5a02b.png">
         - ### Checkout
             - Desktop
+            <img width="1000" alt="checkout-dv" src="https://user-images.githubusercontent.com/69070044/230593246-09f3b193-0695-49ea-80b3-cb13ab21501e.png">
             - Mobile
+            <img width="350" alt="checkout-mv" src="https://user-images.githubusercontent.com/69070044/230593244-a652c26c-b96d-4077-b3cc-c5dd15d55467.png">
         - ### Checkout Success
+            - Desktop
+            <img width="1000" alt="checkout-success-dv" src="https://user-images.githubusercontent.com/69070044/230593250-8e24d952-7315-4551-a884-018c95293814.png">
+            - Mobile
+            <img width="350" alt="checkout-success-mv" src="https://user-images.githubusercontent.com/69070044/230593247-ab684c44-1d0e-48b3-80bc-fd5358567a9d.png">
+        - ### Checkout Success
+        - ### Testimonial
+            - ## Testimonial list
+                - Desktop
+                <img width="1000" alt="testimonial-list-dv" src="https://user-images.githubusercontent.com/69070044/230580860-a6deee2a-03f7-43b5-9bf2-b99997a45a8d.png">
+                - Mobile
+                <img width="350" alt="testimonial-list-mv" src="https://user-images.githubusercontent.com/69070044/230580896-44763bda-f845-420e-8c4c-a66adfd5febc.png">
+            - ## Testimonial detail
+                - Desktop
+                <img width="1000" alt="testimonial-detail-dv" src="https://user-images.githubusercontent.com/69070044/230580942-8ed898a1-539b-47d6-8f21-4301defb3e03.png">
+                - Mobile
+                <img width="350" alt="testimonial-detail-mv" src="https://user-images.githubusercontent.com/69070044/230580971-69089bb0-eb2d-4087-a803-249b0a7b259b.png">
         - ### Profile
+            - Desktop
+            <img width="1000" alt="profile-page-dv" src="https://user-images.githubusercontent.com/69070044/230580048-7505a087-8d55-44a0-9286-3d45779e838b.png">
+            - Mobile
+            <img width="350" alt="profile-page-mv" src="https://user-images.githubusercontent.com/69070044/230580091-a6851079-52d6-4a73-8465-be987fbf4939.png">
+            - Signup
+                - Desktop
+                <img width="1000" alt="signup-dv" src="https://user-images.githubusercontent.com/69070044/230595988-eeb0a1d1-0f50-4e42-8e4d-b581059c34bd.png">
+                - Mobile
+                <img width="350" alt="signup-mv" src="https://user-images.githubusercontent.com/69070044/230595985-c340987f-4bff-4b63-b952-0860672f72e7.png">
+            - Sign In
+                - Desktop
+                <img width="1000" alt="signin-dv" src="https://user-images.githubusercontent.com/69070044/230595989-6f02134e-6402-40a4-a66f-371e4508a669.png">
+                - Mobile
+                <img width="350" alt="signin-mv" src="https://user-images.githubusercontent.com/69070044/230595991-ae5e5084-4e4f-47f8-bf6f-133291629109.png">
+            - Sign Out
+                - Desktop
+                <img width="1000" alt="signout-page-dv" src="https://user-images.githubusercontent.com/69070044/230580308-1c6f236e-20d3-47e6-ba9e-1c4421b4087e.png">
+                - Mobile
+                <img width="350" alt="signout-page-mv" src="https://user-images.githubusercontent.com/69070044/230580351-018b70a7-6f0f-4386-86e8-5b9b21aaf4fb.png">
         - ### Inquiry
+            - Desktop
+            <img width="1000" alt="inquiry-page-dv" src="https://user-images.githubusercontent.com/69070044/230580397-35194ef1-21fa-46aa-bef9-418c1efa3ebe.png">
+            - Mobile
+            <img width="350" alt="inquiry-page-mv" src="https://user-images.githubusercontent.com/69070044/230580418-b4d011e0-8e13-48d9-af30-42c15a6e3ae1.png">
         - ### Authentication
+        - ### 404 Page
+            - <img width="1000" alt="404" src="https://user-images.githubusercontent.com/69070044/230581541-d4885d67-6888-4627-85f8-664c95ae0316.png">
         - ### Responsive Design
 - ## Admin Panel for Store Admin
     - ### Admin Panel Overview
         - ### Products
-        - ### Messages
-        - ### Orders
+            - Desktop
+            <img width="1000" alt="product-mgt-dv" src="https://user-images.githubusercontent.com/69070044/230580619-762247d4-b930-4c57-97af-83dcec9094c8.png">
+            <img width="1191" alt="product-mgt2-dv" src="https://user-images.githubusercontent.com/69070044/230580693-601cff94-cd39-476d-9e51-660a987c6cee.png">
+            - Mobile
+            <img width="350" alt="product-mgt-mv" src="https://user-images.githubusercontent.com/69070044/230580642-468e2b7d-84d4-4163-a9bf-b1370093a8b6.png">
+            <img width="350" alt="product-mgt2-mv" src="https://user-images.githubusercontent.com/69070044/230580726-cca59555-6901-46b1-8c57-d64e820d2097.png">
     - ### Future Features
+        I intend to incorporate the following features in the near future:
         - Product size
         - Sales reports
         - Additional payment methods
