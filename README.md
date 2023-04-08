@@ -372,6 +372,7 @@ The deployed site can be visited here: <a href="https://gregmediscrubs.herokuapp
         - Product options
         - Ticketing Sytem
 - ## Testing Phase
+I have included testing details during and post-development in a separate document called [TESTING.md](./TESTING.md)
 - ## Deployment
     - The deployed site can be visited here: <a href="https://gregmediscrubs.herokuapp.com/" target="_blank">Gregmediscrub</a>. 
     - I have included details of my initial deployment in a separate document called [DEPLOYMENT.md](./DEPLOYMENT.md).

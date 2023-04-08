@@ -6,8 +6,8 @@
             </a>
         </li>
         <li class="nav-item dropdown">
-            <a class="logo-font font-weight-bold nav-link text-black mr-5" href="#" id="all-products-link"
-                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <a class="logo-font font-weight-bold nav-link text-black mr-5" href="{% url 'store' %}"
+                id="all-products-link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 All Products
             </a>
             <div class="dropdown-menu border-0" aria-labelledby="all-products-link">
@@ -19,8 +19,8 @@
         </li>
 
         <li class="nav-item dropdown">
-            <a class="logo-font font-weight-bold nav-link text-black mr-5" href="#" id="scrub-link"
-                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <a class="logo-font font-weight-bold nav-link text-black mr-5" href="{% url 'store' %}?category=Men,Women"
+                id="scrub-link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 Scrubs
             </a>
             <div class="dropdown-menu border-0" aria-labelledby="scrub-link">
@@ -32,11 +32,12 @@
         </li>
 
         <li class="nav-item dropdown">
-            <a class="logo-font font-weight-bold nav-link text-black mr-5" href="#" id="gown-link"
-                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <a class="logo-font font-weight-bold nav-link text-black mr-5"
+                href="{% url 'store' %}?category=Surgical,Nonsterile" id="gown-link" data-toggle="dropdown"
+                aria-haspopup="true" aria-expanded="false">
                 Gowns
             </a>
-            <div class="dropdown-menu border-0" aria-labelledby="homeware-link">
+            <div class="dropdown-menu border-0" aria-labelledby="gown-link">
                 <a href="{% url 'store' %}?category=Surgical" class="dropdown-item">Surgical</a>
                 <a href="{% url 'store' %}?category=Nonsterile" class="dropdown-item">Nonsterile</a>
             </div>
