@@ -13,7 +13,7 @@
 <p>Are you sure you want to delete "{{ testimonial }}"?</p>
 <form method="post">
     {% csrf_token %}
-    <button type="submit">Yes, delete it</button>
+    <button type="submit" aria-label="delete testinomial">Yes, delete it</button>
     <a href="{% url 'testimonial_detail' testimonial.pk %}">No, go back</a>
 </form>
 {% endblock %}

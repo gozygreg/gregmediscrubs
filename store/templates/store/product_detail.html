@@ -79,18 +79,19 @@
                                         <div class="input-group-prepend">
                                             <button
                                                 class="decrement-qty btn btn-black rounded-0 decrement-qty_{{ product.id }}"
-                                                data-item_id="{{ product.id }}">
+                                                aria-label="decrease quantity" data-item_id="{{ product.id }}">
                                                 <span class="icon">
                                                     <i class="fas fa-minus"></i>
                                                 </span>
                                             </button>
                                         </div>
                                         <input class="form-control qty_input id_qty_{{ product.id }}" type="number"
-                                            name="quantity" value="1" min="1" max="99" data-item_id="{{ product.id }}">
+                                            name="quantity" value="1" min="1" max="99" data-item_id="{{ product.id }}"
+                                            aria-label="enter required quantity">
                                         <div class="input-group-append">
                                             <button
                                                 class="increment-qty btn btn-black rounded-0 increment-qty_{{ product.id }}"
-                                                data-item_id="{{ product.id }}">
+                                                data-item_id="{{ product.id }}" aria-label="increase quantity">
                                                 <span class="icon">
                                                     <i class="fas fa-plus"></i>
                                                 </span>
@@ -143,38 +144,39 @@
                         <label> How do you rate this product? </label>
                         <br>
                         <div class="rate">
-                            <input type="radio" name="rating" id="rating10" value="5" title="5" required><label
-                                for="rating10"></label>
+                            <input type="radio" name="rating" id="rating10" value="5" title="5"
+                                aria-label="enter rating" required><label for="rating10"></label>
                             <input type="radio" name="rating" id="rating9" value="4.5" required><label for="rating9"
-                                title="4.5" class="half"></label>
-                            <input type="radio" name="rating" id="rating8" value="4" required><label for="rating8"
-                                title="4"></label>
+                                title="4.5" class="half" aria-label="enter rating"></label>
+                            <input type="radio" name="rating" id="rating8" value="4" aria-label="enter rating"
+                                required><label for="rating8" title="4"></label>
                             <input type="radio" name="rating" id="rating7" value="3.5" required><label for="rating7"
-                                title="3.5" class="half"></label>
+                                title="3.5" class="half" aria-label="enter rating"></label>
                             <input type="radio" name="rating" id="rating6" value="3" required><label for="rating6"
-                                title="3"></label>
-                            <input type="radio" name="rating" id="rating5" value="2.5" required><label for="rating5"
-                                title="2.5" class="half"></label></label>
-                            <input type="radio" name="rating" id="rating4" value="2" required><label for="rating4"
-                                title="2"></label>
-                            <input type="radio" name="rating" id="rating3" value="1.5" required><label for="rating3"
-                                title="1.5" class="half"></label>
+                                title="3" aria-label="enter rating"></label>
+                            <input type="radio" name="rating" id="rating5" value="2.5" aria-label="enter rating"
+                                required><label for="rating5" title="2.5" class="half"></label></label>
+                            <input type="radio" name="rating" id="rating4" value="2" aria-label="enter rating"
+                                required><label for="rating4" title="2"></label>
+                            <input type="radio" name="rating" id="rating3" value="1.5" aria-label="enter rating"
+                                required><label for="rating3" title="1.5" class="half"></label>
                             <input type="radio" name="rating" id="rating2" value="1" required><label for="rating2"
                                 title="1"></label>
-                            <input type="radio" name="rating" id="rating1" value="0.5" required><label for="rating1"
-                                title="0.5" class="half"></label>
+                            <input type="radio" name="rating" id="rating1" value="0.5" aria-label="enter rating"
+                                required><label for="rating1" title="0.5" class="half"></label>
                         </div>
                         <br>
 
                         Review Title:
-                        <input type="text" class="form-control" name="subject">
+                        <input type="text" class="form-control" name="subject" aria-label="review title">
                         <br>
                         Review:
-                        <textarea name="review" class="form-control" rows="4"></textarea>
+                        <textarea name="review" class="form-control" aria-label="enter review" rows="4"></textarea>
                         <br>
                         {% if user.is_authenticated %}
                         {% if order %}
-                        <input type="submit" class="btn btn-black rounded-0" value="Submit Review">
+                        <input type="submit" class="btn btn-black rounded-0" value="Submit Review"
+                            aria-label="submit review">
                         {% else %}
                         <p>You must have purchased this product to post a review.</p>
                         {% endif %}

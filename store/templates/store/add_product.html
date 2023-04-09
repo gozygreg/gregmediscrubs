@@ -15,15 +15,16 @@
     <div class="row">
         <div class="col-12 col-md-6">
             <hr>
-            <h2 class="logo-font mb-4">Product Management</h2>
-            <h5 class="text-muted">Add a Product</h5>
+            <h3 class="logo-font mb-4">Product Management</h3>
+            <h4 class="text-muted">Add a Product</h4>
             <hr>
         </div>
     </div>
 
     <div class="row">
         <div class="col-12 col-md-6">
-            <form method="POST" action="{% url 'add_product' %}" class="form mb-2" enctype="multipart/form-data">
+            <form method="POST" action="{% url 'add_product' %}" class="form mb-2" enctype="multipart/form-data"
+                aria-label="Add Product Form">
                 {% csrf_token %}
                 {% for field in form %}
                 {% if field.name != 'image' %}
@@ -34,7 +35,7 @@
                 {% endfor %}
                 <div class="text-right">
                     <a class="btn btn-outline-black rounded-0" href="{% url 'store' %}">Cancel</a>
-                    <button class="btn btn-black rounded-0" type="submit">Add Product</button>
+                    <button class="btn btn-black rounded-0" type="submit" aria-label="add product">Add Product</button>
                 </div>
             </form>
         </div>

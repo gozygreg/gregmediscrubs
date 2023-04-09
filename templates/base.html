@@ -98,8 +98,8 @@
             <div class="col-12 col-lg-4 my-auto py-1 py-lg-0">
                 <ul class="list-inline list-unstyled text-center text-lg-right my-0">
                     <li class="list-inline-item dropdown">
-                        <a class="text-black nav-link" href="#" id="user-options" data-toggle="dropdown"
-                            aria-haspopup="true" aria-expanded="false" aria-label="user account options">
+                        <a class="text-black nav-link" href="#" data-toggle="dropdown" aria-haspopup="true"
+                            aria-expanded="false" aria-label="user account options">
                             <div class="text-center">
                                 <div><i class="fas fa-user fa-lg"></i></div>
                                 <p class="my-0">My Account</p>
@@ -122,8 +122,9 @@
                     <li class="list-inline-item">
                         <a class="{% if grand_total %}text-info font-weight-bold{% else %}text-black{% endif %} nav-link"
                             href="{% url 'view_bag' %}">
-                            <div class="text-center">
-                                <div><i class="fa fa-shopping-cart" style="font-size: 20px;" aria-hidden="true"></i>
+                            <div class="text-center text-black">
+                                <div><i class="fa fa-shopping-cart" style="font-size: 20px; color: black;"
+                                        aria-hidden="true"></i>
                                 </div>
                                 <p class="my-0">
                                     {% if grand_total %}
