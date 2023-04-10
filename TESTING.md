@@ -104,13 +104,14 @@
         - EPIC 1 - Product browsing Search:
             | As a | Requirement           | Mobile   | Tablet | Desktop |
             |------|-----------------------|----------|--------| --------|
+            | Shopper | sort my search by relevance, price, popularity, rating etc | ✓ | ✓ | ✓ |
             | Shopper | search for products by entering keywords or by brand so that I can easily find what I am looking for | ✓  | ✓  | ✓  
-            | Shopper | see high-quality product images and descriptions when I search for product | ✓ | ✓ | ✓ |
-            | Shopper | sort my search by relevance, price, popularity | ✓ | ✓ | ✓ |
+            | Shopper | see high-quality product images, descriptions and view a list of products in a specific category when I search for product | ✓ | ✓ | ✓ |
 
-            - acceptance criteria for EPIC 1 and its corresponding user stories
 
-                - | passed |  Sort the list of available products so that I can view them in different orders. and find the highest/lowest rating/prices and sort alphabetically to aid in finding the most suitable products to suit my needs. |
+            - acceptance criteria testing for EPIC 1 and its corresponding user stories
+
+                - | passed | sort my search by relevance, price, popularity, rating etc |
                     |--------| --------------------|
                     | ✓ | Products can be sorted by name in ascending order. |
                     | ✓ | Products can be sorted by name in descending order. |
@@ -119,16 +120,17 @@
                     | ✓ | Products can be sorted by rating in ascending order. |
                     | ✓ | Products can be sorted by rating in descending order. |
 
-                - | passed | Search for a product by name or content in the product description so that I can find a specific product I am looking for.| 
+                - | passed | search for products by entering keywords or by brand so that I can easily find what I am looking for| 
                     |--------| --------------------|
                     | ✓ | Search bar is visible on all pages. |
                     | ✓ | Search returns results based on the search term. |
                     | ✓ | Search query matches product name and description. |
                     | ✓ | search terms are displayed above the search results. |
                     | ✓ | Number of products returned is displayed above the search results. |
-                    
-                - | passed | View a list of products in a specific category so that I can view all products in that category. |
+
+                - | passed | see high-quality product images, descriptions and view a list of products in a specific category when I search for product. |
                     |--------| --------------------|
+                    | ✓ | High quality product image can be seen |
                     | ✓ | Products can be filtered by category via the navbar links. |
                     | ✓ | Products can be filtered by sub-category via the navbar links. |
             
@@ -142,12 +144,93 @@
             | Shopper | remove items from my chart | ✓ | ✓ | ✓ |
             | Shopper | select a payment option | ✓ | ✓ | ✓ |
 
+            - acceptance criteria testing for EPIC 2 and its corresponding user stories
+
+                - | passed | add products to my cart |
+                    |--------| --------------------|
+                    | ✓ | The shopper can view a "Add to Cart" button on the product page.|
+                    | ✓ | Clicking on the "Add to Cart" button adds the product to the shopper's cart. |
+                    | ✓ | The cart icon displays the number of items in the cart and the total cost of the items. |
+                    | ✓ | The shopper can add multiple products to the cart. |
+                    | ✓ | The cart page displays the added products along with their quantity and price. |
+                    | ✓ | The shopper can increase or decrease the quantity of products in the cart. |
+
+                - | passed | view the content of my cart and see the total cost of my purchase | 
+                    |--------| --------------------|
+                    | ✓ | The site has a shopping cart page. |
+                    | ✓ | The shopping cart page has a list of all the items in the user's cart. |
+                    | ✓ | The shopping cart page has a total price for all the user cart items. |
+                    | ✓ | The shopping cart page has a button to proceed to checkout.|
+                    | ✓ |  The shopping cart page has a button to remove items from the cart. |
+
+                - | passed | adjust the quantity of items in my cart |
+                    |--------| --------------------|
+                    | ✓ | The quantity of each item in the cart can be changed and updated from the cart page. |
+                    | ✓ | Total recalculates each time the quantity is adjusted. |
+                    | ✓ | User is shown a success/error message when the state changes in the cart. |
+                    | ✓ | User cannot set the quantity selector to less than 1 |
+                    | ✓ | User can set the quantity selector to 1. |
+                    | ✓ | User can use the plus and minus buttons to select the quantity. |
+                    | ✓ | User cannot add a quantity of 0 to the cart. |        
+
+                - | passed | remove items from my chart | 
+                    |--------| --------------------|
+                    | ✓ | Each product in the cart has a "Remove" button next to it. |
+                    | ✓ | Clicking on the "Remove" button removes the selected product from the cart. |
+                    | ✓ | The cart page updates to show the remaining products in the cart along with their quantity and price. |
+                    | ✓ | The total cost of all the remaining products in the cart is updated accordingly. |
+                    | ✓ | If the shopper removes all the products from the cart, the cart page displays a message informing them that the cart is empty. |
+
+                - | passed | select a payment option  |
+                    |--------| --------------------|
+                    | ✓ | The site has a checkout page. |
+                    | ✓ | The checkout page has a form to enter the user's payment details. |
+                    | ✓ | The checkout page has a form to enter the user's shipping details. |
+                    | ✓ | Payments are handled by Stripe. |
+                    | ✓ | The checkout page has a button to adjust bag or continue browsing products if they change their mind about their order. |
+                    | ✓ | The shopper can enter their payment details (such as card number, expiration date, and CVV) for the selected payment option. |
+                    | ✓ | The checkout page has a button to save the user's details for future use. |
+            
+
         - EPIC 3 - Site Admin and Store Management:
             | As a | Requirement           | Desktop  | Mobile | Tablet  |
             |---|-----------------------|----------|--------| --------|
-            | Site admin |track and manage my inventory levels | * | * | * |
-            | Site admin |manage and update product information | ✓ | ✓ | ✓ |
-            | Site admin |view and manage customer orders and shipping information | ✓ | ✓ | ✓ |
+            | Site admin | track and manage my inventory levels | * | * | * |
+            | Site admin | manage and update product information | ✓ | ✓ | ✓ |
+            | Site admin | view and manage customer orders and shipping information | ✓ | ✓ | ✓ |
+
+            - acceptance criteria testing for EPIC 3 and its corresponding user stories
+
+                - | passed | track and manage my inventory levels |
+                    |--------| --------------------|
+                    | ✓ |  |
+                    | ✓ |  |
+                    | ✓ |  |
+                    | ✓ |  |
+                    | ✓ |  |
+                    | ✓ |  |
+
+                - | passed | manage and update product information | 
+                    |--------| --------------------|
+                    | ✓ | Product can be added via the admin panel and is visible in the store front end. |
+                    | ✓ | Newly added items had full functionality of pre-existing items. |
+                    | ✓ | Product can be edited via the admin panel and is visible in the store front end. |
+                    | ✓ | Quick edits can only be made from the front end by super users. |
+                    | ✓ | Product can be deleted via the admin panel and is no longer visible in the store front end. |
+                    | ✓ | Quick delete can only be made from the front end by super users. |
+                    | ✓ | product cannot be deleted by non-superuser using the URL. |
+
+                - | passed | view and manage customer orders and shipping information |
+                    |--------| --------------------|
+                    | ✓ | The site has a checkout success page.  |
+                    | ✓ | The checkout page has a button to save the user's details for future use. |
+                    | ✓ | The checkout success page has a message to confirm the order was successful. |
+                    | ✓ | The checkout success page has a button to return to the home page. |
+                    | ✓ | order is available to the customer who made the order in their order history page. |
+                    | ✓ | The checkout page has a button to save the user's details for future use. |
+                    | ✓ | If checked, the details from the checkout form are saved to the user's profile. |
+                    | ✓ | If it exists, the users saved details are pre-filled in the checkout form. |
+                    | ✓ | If the user has saved details, the checkbox is unchecked by default. |
 
         - EPIC 4 - Product Reviews and Product detail Page:
             | As a | Requirement           | Desktop  | Mobile | Tablet  |
@@ -156,6 +239,34 @@
             | Shopper | see product reviews as well as product details such as product image, description and materials | ✓ | ✓ | ✓ |
             | Shopper | add the product to my cart | ✓ | ✓ | ✓ |
             |Authenticated shopper | I want to be able to review that products and give feedback | ✓ | ✓ | ✓ |
+
+            - acceptance criteria testing for EPIC 4 and its corresponding user stories
+
+                - | passed | view high-quality product images  |
+                    |--------| --------------------|
+                    | ✓ | When a user navigates to the product detail page, they should be able to view an image of the product. |
+                    | ✓ | The image displayed should be of high quality and should be clearly visible to the user. |
+                    | ✓ | The images should be responsive and should adjust to the screen size of the device being used to view them. |
+                    | ✓ | The image should be accessible to users with disabilities, with appropriate alt text and image descriptions. |
+                    | ✓ | The image should be optimized for search engine optimization (SEO) by using appropriate file names, image tags, and meta descriptions.|
+                    | ✓ | The image should load on a separate screen when click on |
+
+                - | passed | see product reviews as well as product details such as product image, description and materials | 
+                    |--------| --------------------|
+                    | ✓ | The user should be able to view product reviews along with the product details. The reviews should be prominently displayed and easily accessible. |
+                    | ✓ | The product reviews should be presented in a clear and organized manner, with the most recent reviews appearing first. |
+                    | ✓ | The user should be able to leave a review for the product (if they bought that product) and rate it based on their experience. |
+                    | ✓ | The product details and reviews should be displayed in a responsive manner, adjusting to the screen size of the device being used to view them. |
+                    | ✓ | The product details and reviews should be optimized for search engine optimization (SEO) by using appropriate tags and meta descriptions. |
+
+                - | passed | adjust the quantity of items in my cart |
+                    |--------| --------------------|
+                    | ✓ |  Just as in EPIC 2 |
+
+                - | passed | remove items from my chart | 
+                    |--------| --------------------|
+                    | ✓ | Just as in EPIC 2|
+
 
         - EPIC 5 - User Account Management:
             | As a | Requirement           | Desktop  | Mobile | Tablet  |
@@ -166,6 +277,52 @@
             | User | I want to be able to update my account information (such as name and address etc), so that my information is always up-to-date | ✓ | ✓ | ✓ |
             | User | I want to be able to view my order history so that I can keep track of all my purchases | ✓ | ✓ | ✓ |
 
+            - acceptance criteria testing for EPIC 5 and its corresponding user stories
+
+                - | passed | I want to be able to sign up for an account |
+                    |--------| --------------------|
+                    | ✓ | The site has a registration page. |
+                    | ✓ | Users can not register with an email address that is already in use. |
+                    | ✓ | Users can successfully register for the site |
+                    | ✓ | Users can not register with a username that is already in use.|
+                    | ✓ | Users can not register with a password similar to their user name. |
+                    | ✓ | Users can not register with a password similar to their email address. |
+                    | ✓ | Users can not register with a too short password. |
+                    | ✓ | Errors are displayed to the user if any of the above are attempted. |
+                    | ✓ | Success message is displayed to the user if registration is successful. |
+                    | ✓ | User sees message to verify their email. |
+                    | ✓ | Users can not log in until they have verified their email. |
+                    | ✓ | Verification email is sent to the user. |
+                    | ✓ | Verification email contains a link to confirm the user's email. |
+                    | ✓ | Once verified, users, can log in with their username or email. |
+                    | ✓ | Users are redirected to the login in page once the email is verified. |
+
+                - | passed | I want to be able to log in/out to my account | 
+                    |--------| --------------------|
+                    | ✓ | Log in/out options are visible on all pages under the account dropdown. |
+                    | ✓ | Once logged out, personal information is no longer visible. |
+                    | ✓ | Once logged in, the account options change to reveal a profile link. |
+                    | ✓ | Once logged in/out, the user is redirected to the home page. |
+                    | ✓ | User receives a success message when they log in/out. |
+  
+
+                - | passed | reset my password if I forget so that I can regain access to my account |
+                    |--------| --------------------|
+                    | ✓ | The site has a password reset page. |
+                    | ✓ | The password reset page has a form to enter the user's email address. |
+                    | ✓ | Email is sent with password reset token. |
+                    | ✓ | Link in the email takes the user to the password reset page. |
+                    | ✓ | Password reset page has a form to enter the new password. |
+                    | ✓ | User gets a success message once the password has been reset |
+                    | ✓ | Users can now log in with their new password. |
+
+                - | passed | update my account information (such as name and address etc) | 
+                    |--------| --------------------|
+                    | ✓ | User can update their details on the profile page. |
+                    | ✓ | Appropriate error messages are shown if the user enters invalid information. |
+                    | ✓ | Success message is displayed if the user updates their details successfully. |
+                    | ✓ | Shipping address on previous order unaffected by updating details. |
+
         - EPIC 6 - Order Management:
             |As a | Requirement           | Desktop  | Mobile | Tablet  |
             |--|-----------------------|----------|--------| --------|
@@ -174,22 +331,109 @@
             | Shopper | I want to be able to manage my account information | ✓ | ✓ | ✓ |
             | Shopper | I want to be able to cancel an order when necessary | * | * | * |
 
+            - acceptance criteria testing for EPIC 6 and its corresponding user stories
+
+                - | passed | I want to be able view my order history |
+                    |--------| --------------------|
+                    | ✓ | When a user logs into their profile, they should be able to view their order history. |
+                    | ✓ | The order history should include details about the orders, such as the order date, order number, and total price. |
+                    | ✓ | The order history should include a list of all the products ordered in each order, along with the quantity of each product ordered. |
+                    | ✓ | The user should be able to click on an individual order to view more details about that order, including shipping information, payment information, and a list of the products ordered. |
+                    | ✓ | The order history should be presented in a clear and organized manner, with the most older orders appearing first. |
+            
+
+                - | passed | I want to be able to track my order | 
+                    |--------| --------------------|
+                    | ✓ |  |
+                    | ✓ |  |
+                    | ✓ |  |
+
+                - | passed | want to be able to manage my account information |
+                    |--------| --------------------|
+                    | ✓ | When a user logs into their profile, they should be able to manage their account details. |
+                    | ✓ | The user should see a form to update their personal information, such as their name, email address, and phone number. |
+                    | ✓ | The form should have an update button on the page |
+
+                - | passed | want to be able to cancel an order when necessary | 
+                    |--------| --------------------|
+                    | ✓ |  |
+                    | ✓ |  |
+                    | ✓ |  |
+                    | ✓ |  |
+                    | ✓ |  |
+
         - EPIC 7 - Payment Option:
             | As a | Requirement           | Desktop  | Mobile | Tablet  |
             |--|-----------------------|----------|--------| --------|
-            | Shopper |I want to be able to purchase using my credit card | ✓ | ✓ | ✓ |
-            | Registered shopper with an account |I want to be able to save my payment information for future purchases, so that I don't have to enter it every time I shop | ✓ | ✓ | ✓ |
+            | Shopper | I want to be able to purchase using my credit card | ✓ | ✓ | ✓ |
+            | Registered shopper with an account | I want to be able to save my payment information for future purchases, so that I don't have to enter it every time I shop | ✓ | ✓ | ✓ |
             | Security-conscious shopper | I want to be able to use a secure payment option, such as PayPal or stripe to protect my personal and financial information | ✓ | ✓ | ✓ |
-            |International shopper |I want to be able to use payment option that supports multiple currencies, so that I can easily convert and make purchases in my local currency | * | * | * |
+            |International shopper | I want to be able to use payment option that supports multiple currencies, so that I can easily convert and make purchases in my local currency | * | * | * |
+
+            - acceptance criteria testing for EPIC 7 and its corresponding user stories
+
+                - | passed | I want to be able to purchase using my credit card  |
+                    |--------| --------------------|
+                    | ✓ | The site has a checkout page. |
+                    | ✓ | The checkout page has a form to enter the user's payment details. |
+                    | ✓ | The checkout page has a form to enter the user's shipping details. |
+                    | ✓ | Payments are handled by Stripe. |
+                    | ✓ | The checkout page has a button to adjust bag or continue browsing products if they change their mind about their order. |
+                    | ✓ | The shopper can enter their payment details (such as card number, expiration date, and CVV) for the selected payment option. |
+                    | ✓ | The checkout page has a button to save the user's details for future use. |
+
+                - | passed | I want to be able to save my payment information for future purchases, so that I don't have to enter it every time I shop | 
+                    |--------| --------------------|
+                    | ✓ | as seen above in shopping cart and checkout epic |
+
+
+                - | passed | I want to be able to use a secure payment option, such as PayPal or stripe to protect my personal and financial information |
+                    |--------| --------------------|
+                    | ✓ |  as seen above in shopping cart aand checkout epic |
+
+                - | passed | I want to be able to use payment option that supports multiple currencies, so that I can easily convert and make purchases in my local currency | 
+                    |--------| --------------------|
+                    | ✓ |  This will be a future feature |
             
 
         - EPIC 8 - Customer Testimonial
             | As a | Requirement           | Desktop  | Mobile | Tablet  |
             |--|-----------------------|----------|--------| --------|
-            |Site visitor |I want to see the list of customers who have given testimonies about the product they bought| ✓ | ✓ | ✓ |
+            |Site visitor | I want to see the list of customers who have given testimonies about our company | ✓ | ✓ | ✓ |
             |Site visitor | I want to read testimonial details (including testimonial image and name) from customers who have purchased scrubs from the site | ✓ | ✓ | ✓ |
             | Site admin | I want to be able to add testimonies that customers who have purchased a scrub have sent to me | ✓ | ✓ |  ✓|
             | Site admin | I want to be able to edit and delete testimonies if the customer wants to change details of their testimony. | ✓ | ✓ | ✓ |
+
+            - acceptance criteria testing for EPIC 8 and its corresponding user stories
+
+                - | passed | I want to see the list of customers who have given testimonies about the product they bought |
+                    |--------| --------------------|
+                    | ✓ | When a user navigates to the testimonials page, they should be able to view a list of customers who have given testimonials about the ecommerce company or site. |
+                    | ✓ | Each testimonial should include the name of the customer, their photo (if available), and a quote about their experience with the ecommerce company or site. |
+                    | ✓ | The user should be directed to the testimonial detail page when any testimony list is clicked on |
+ 
+
+                - | passed | I want to read testimonial details (including testimonial image and name) from customers who have purchased scrubs from the site | 
+                    |--------| --------------------|
+                    | ✓ |  |
+                    | ✓ |  |
+                    | ✓ |  |
+                    | ✓ |  |
+                    | ✓ |  |
+
+                - | passed | As a site admin, I want to be able to add testimonies that customers who have purchased a scrub have sent to me |
+                    |--------| --------------------|
+                    | ✓ |  |
+                    | ✓ |  |
+                    | ✓ |  |
+
+                - | passed | As a site admin, I want to be able to edit and delete testimonies if the customer wants to change details of their testimony. | 
+                    |--------| --------------------|
+                    | ✓ |  |
+                    | ✓ |  |
+                    | ✓ |  |
+                    | ✓ |  |
+                    | ✓ |  |
 
         - EPIC 9 - Customer Inquiry
             | As a | Requirement           | Desktop  | Mobile | Tablet  |
@@ -197,6 +441,33 @@
             | Authenticated user| I want to be able to log any questions or inquiry I have | ✓ | ✓ | ✓ |
             | Site user | I want to be able to show the site user a message box stating that their inquiry has been noted and that we will get back to them as soon as possible. | ✓ | ✓ | ✓ |
             | Site user | I want authenticated customer to be able to send testimonies via the inquiry form if they wish to | ✓ | ✓ | ✓ |
+
+            - acceptance criteria testing for EPIC 9 and its corresponding user stories
+
+                - | passed | I want to be able to log any questions or inquiry I have |
+                    |--------| --------------------|
+                    | ✓ |  |
+                    | ✓ |  |
+                    | ✓ |  |
+                    | ✓ |  |
+                    | ✓ |  |
+                    | ✓ |  |
+
+                - | passed | I want to be able to show the site user a message box stating that their inquiry has been noted and that we will get back to them as soon as possible.| 
+                    |--------| --------------------|
+                    | ✓ |  |
+                    | ✓ |  |
+                    | ✓ |  |
+                    | ✓ |  |
+                    | ✓ |  |
+
+                - | passed | I want authenticated customer to be able to send testimonies via the inquiry form if they wish to |
+                    |--------| --------------------|
+                    | ✓ |  |
+                    | ✓ |  |
+                    | ✓ |  |
+
+
             
 - ## Automated Tests
     Because of the time constraints, I prioritized completing the project over writing automated tests. As a result, I have made the decision to create manual tests for all the apps and features by testing each user story one by one.   
