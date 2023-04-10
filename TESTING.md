@@ -107,6 +107,30 @@
             | Shopper | search for products by entering keywords or by brand so that I can easily find what I am looking for | ✓  | ✓  | ✓  
             | Shopper | see high-quality product images and descriptions when I search for product | ✓ | ✓ | ✓ |
             | Shopper | sort my search by relevance, price, popularity | ✓ | ✓ | ✓ |
+
+            - acceptance criteria for EPIC 1 and its corresponding user stories
+
+                - | passed |  Sort the list of available products so that I can view them in different orders. and find the highest/lowest rating/prices and sort alphabetically to aid in finding the most suitable products to suit my needs. |
+                    |--------| --------------------|
+                    | ✓ | Products can be sorted by name in ascending order. |
+                    | ✓ | Products can be sorted by name in descending order. |
+                    | ✓ | Products can be sorted by price in ascending order. |
+                    | ✓ | Products can be sorted by price in descending order. |
+                    | ✓ | Products can be sorted by rating in ascending order. |
+                    | ✓ | Products can be sorted by rating in descending order. |
+
+                - | passed | Search for a product by name or content in the product description so that I can find a specific product I am looking for.| 
+                    |--------| --------------------|
+                    | ✓ | Search bar is visible on all pages. |
+                    | ✓ | Search returns results based on the search term. |
+                    | ✓ | Search query matches product name and description. |
+                    | ✓ | search terms are displayed above the search results. |
+                    | ✓ | Number of products returned is displayed above the search results. |
+                    
+                - | passed | View a list of products in a specific category so that I can view all products in that category. |
+                    |--------| --------------------|
+                    | ✓ | Products can be filtered by category via the navbar links. |
+                    | ✓ | Products can be filtered by sub-category via the navbar links. |
             
 
         - EPIC 2 - Shopping cart and Checkout:
@@ -121,26 +145,26 @@
         - EPIC 3 - Site Admin and Store Management:
             | As a | Requirement           | Desktop  | Mobile | Tablet  |
             |---|-----------------------|----------|--------| --------|
-            | Site admin |track and manage my inventory levels | | | |
-            | Site admin |manage and update product information | | | |
-            |Site admin |view and manage customer orders and shipping information | | | |
+            | Site admin |track and manage my inventory levels | * | * | * |
+            | Site admin |manage and update product information | ✓ | ✓ | ✓ |
+            | Site admin |view and manage customer orders and shipping information | ✓ | ✓ | ✓ |
 
         - EPIC 4 - Product Reviews and Product detail Page:
             | As a | Requirement           | Desktop  | Mobile | Tablet  |
             |---|-----------------------|----------|--------| --------|
-            | Shopper |view high-quality product images | | | |
-            | Shopper |see product reviews as well as product details such as product image, description and materials | | | |
-            | Shopper |add the product to my cart | | | |
-            |Authenticated shopper |I want to be able to review that products and give feedback | | | |
+            | Shopper | view high-quality product images | ✓ | ✓ | ✓ |
+            | Shopper | see product reviews as well as product details such as product image, description and materials | ✓ | ✓ | ✓ |
+            | Shopper | add the product to my cart | ✓ | ✓ | ✓ |
+            |Authenticated shopper | I want to be able to review that products and give feedback | ✓ | ✓ | ✓ |
 
         - EPIC 5 - User Account Management:
             | As a | Requirement           | Desktop  | Mobile | Tablet  |
             |--|-----------------------|----------|--------| --------|
-            | User |I want to be able to sign up for an account |  | | |
-            | User |I want to be able to log in to my account | | | |
-            | User |I want to be able to reset my password if I forget so that I can regain access to my account | | | |
-            | User |I want to be able to update my account information (such as name and address etc), so that my information is always up-to-date | | | |
-            | User |I want to be able to view my order history so that I can keep track of all my purchases | | | |
+            | User | I want to be able to sign up for an account | ✓ | ✓ | ✓ |
+            | User | I want to be able to log in to my account | ✓ | ✓ | ✓ |
+            | User | I want to be able to reset my password if I forget so that I can regain access to my account | ✓ | ✓ | ✓ |
+            | User | I want to be able to update my account information (such as name and address etc), so that my information is always up-to-date | ✓ | ✓ | ✓ |
+            | User | I want to be able to view my order history so that I can keep track of all my purchases | ✓ | ✓ | ✓ |
 
         - EPIC 6 - Order Management:
             |As a | Requirement           | Desktop  | Mobile | Tablet  |
