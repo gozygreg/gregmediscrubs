@@ -34,7 +34,8 @@
                         class="btn btn-black btn-sm btn-outline-black">Edit</a>
                     <form action="{% url 'delete_testimonial' testimonial.id %}" method="post" style="display: inline">
                         {% csrf_token %}
-                        <button type="submit" class="btn btn-black btn-sm btn-outline-black">Delete</button>
+                        <button type="submit" class="btn btn-black btn-sm btn-outline-black"
+                            aria-label="Delete testimonial">Delete</button>
                     </form>
                 </div>
             </div>

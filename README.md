@@ -193,6 +193,18 @@ The deployed site can be visited here: <a href="https://gregmediscrubs.herokuapp
                 - As a registered shopper with an account, I want to be able to save my payment information for future purchases, so that I don't have to enter it every time I shop
                 - As a security-conscious shopper, I want to be able to use a secure payment option, such as PayPal or stripe to protect my personal and financial information
                 - As an international shopper, I want to be able to use payment option that supports multiple currencies, so that I can easily convert and make purchases in my local currency
+
+            - EPIC 8 - Customer Testimonial
+                - As a site visitor, I want to see the list of customers who have given testimonies about the product they bought, sso that I can make an informed purchase without spending too much time researching.
+                - As a site visitor, I want to read testimonial details (including testimonial image and name) from customers who have purchased scrubs from the site, so that I can trust the quality and comfort of the scrubs before I make a purchase.
+                - As the site admin, I want to be able to add testimonies that customers who have purchased a scrub have sent to me, so that potential customer can understand how good and reliable our products are
+                - As the site admin, I want to be able to edit and delete testimonies if the customer wants to change details of their testimony.
+
+
+            - EPIC 7 - Customer Inquiry
+                - As an authenticated user with an account, I want to be able to log any questions or inquiry I have, so that there is a mean of communication between me and the site admin/site owner.
+                - As the site user, I want to be able to show the site user a message box stating that their inquiry has been noted and that we will get back to them as soon as possible.
+                - As the site user, I want authenticated customer to be able to send testimonies via the inquiry form if they wish to, so that I can get feedback on how we are doing as a company 
     - ### Skeleton
         - ### Wireframes
             The Balsamiq wireframing tool was utilized to create visual representations of the website's design and functionality. The wireframes utilized in the layout planning process are provided below. Nonetheless, certain alterations or eliminations were made during the development phase due to limitations of time or feasibility.

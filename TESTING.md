@@ -102,19 +102,76 @@
 
     - ### Testing User Stories
         - EPIC 1 - Product browsing Search:
+            | As a | Requirement           | Desktop  | Mobile | Tablet  |
+            |------|-----------------------|----------|--------| --------|
+            | Shopper |search for products by entering keywords or by brand so that I can easily find what I am looking for | ✓  | ✓  | ✓  
+            | Shopper |see high-quality product images and descriptions when I search for product | | | |
+            | Shopper |sort my search by relevance, price, popularity | | | |
+            
 
         - EPIC 2 - Shopping cart and Checkout:
+            | As a | Requirement           | Desktop  | Mobile | Tablet  |
+            |---|-----------------------|----------|--------| --------|
+            | Shopper |add products to my cart | | | |
+            | Shopper |view the content of my cart and see the total cost of my purchase | | | |
+            | Shopper |adjust the quantity of items in my cart | | | |
+            | Shopper |remove items from my chart | | | |
+            | Shopper |select a payment option | | | |
 
         - EPIC 3 - Site Admin and Store Management:
+            | As a | Requirement           | Desktop  | Mobile | Tablet  |
+            |---|-----------------------|----------|--------| --------|
+            | Site admin |track and manage my inventory levels | | | |
+            | Site admin |manage and update product information | | | |
+            |Site admin |view and manage customer orders and shipping information | | | |
 
         - EPIC 4 - Product Reviews and Product detail Page:
+            | As a | Requirement           | Desktop  | Mobile | Tablet  |
+            |---|-----------------------|----------|--------| --------|
+            | Shopper |view high-quality product images | | | |
+            | Shopper |see product reviews as well as product details such as product image, description and materials | | | |
+            | Shopper |add the product to my cart | | | |
+            |Authenticated shopper |I want to be able to review that products and give feedback | | | |
 
         - EPIC 5 - User Account Management:
+            | As a | Requirement           | Desktop  | Mobile | Tablet  |
+            |--|-----------------------|----------|--------| --------|
+            | User |I want to be able to sign up for an account | | | |
+            | User |I want to be able to log in to my account | | | |
+            | User |I want to be able to reset my password if I forget so that I can regain access to my account | | | |
+            | User |I want to be able to update my account information (such as name and address etc), so that my information is always up-to-date | | | |
+            | User |I want to be able to view my order history so that I can keep track of all my purchases | | | |
 
         - EPIC 6 - Order Management:
+            |As a | Requirement           | Desktop  | Mobile | Tablet  |
+            |--|-----------------------|----------|--------| --------|
+            | Shopper | I want to be able view my order history | | | |
+            | Shopper | I want to be able to track my order | | | |
+            | Shopper | I want to be able to manage my account information | | | |
+            | Shopper | I want to be able to cancel an order when necessary | | | |
 
         - EPIC 7 - Payment Option:
-        
+            | As a | Requirement           | Desktop  | Mobile | Tablet  |
+            |--|-----------------------|----------|--------| --------|
+            | Shopper |I want to be able to purchase using my credit card | | | |
+            | Registered shopper with an account |I want to be able to save my payment information for future purchases, so that I don't have to enter it every time I shop | | | |
+            | Security-conscious shopper | I want to be able to use a secure payment option, such as PayPal or stripe to protect my personal and financial information | | | |
+            |International shopper |I want to be able to use payment option that supports multiple currencies, so that I can easily convert and make purchases in my local currency | | | |
 
+        - EPIC 8 - Customer Testimonial
+            | As a | Requirement           | Desktop  | Mobile | Tablet  |
+            |--|-----------------------|----------|--------| --------|
+            |Site visitor |I want to see the list of customers who have given testimonies about the product they bought| | | |
+            |Site visitor | I want to read testimonial details (including testimonial image and name) from customers who have purchased scrubs from the site | | | |
+            | Site admin | I want to be able to add testimonies that customers who have purchased a scrub have sent to me | | | |
+            | Site admin | I want to be able to edit and delete testimonies if the customer wants to change details of their testimony. | | | |
+
+        - EPIC 9 - Customer Inquiry
+            | As a | Requirement           | Desktop  | Mobile | Tablet  |
+            |--|-----------------------|----------|--------| --------|
+            | Authenticated user| I want to be able to log any questions or inquiry I have | | | |
+            | Site user | I want to be able to show the site user a message box stating that their inquiry has been noted and that we will get back to them as soon as possible. | | | |
+            | Site user | I want authenticated customer to be able to send testimonies via the inquiry form if they wish to | | | |
+            
 - ## Automated Tests
     Because of the time constraints, I prioritized completing the project over writing automated tests. As a result, I have made the decision to create manual tests for all the apps and features by testing each user story one by one.   
