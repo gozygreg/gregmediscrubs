@@ -415,25 +415,23 @@
 
                 - | passed | I want to read testimonial details (including testimonial image and name) from customers who have purchased scrubs from the site | 
                     |--------| --------------------|
-                    | ✓ |  |
-                    | ✓ |  |
-                    | ✓ |  |
-                    | ✓ |  |
-                    | ✓ |  |
+                    | ✓ | The individual testimonial page should include the testimonial image, name of the customer, and their quote. |
+                    | ✓ | The testimonials page and individual testimonial page should be accessible to users with disabilities, with appropriate alt text and descriptions. |
+                    | ✓ | The user should be able to easily navigate back to the testimonials page from the individual testimonial page. |
+
 
                 - | passed | As a site admin, I want to be able to add testimonies that customers who have purchased a scrub have sent to me |
                     |--------| --------------------|
-                    | ✓ |  |
-                    | ✓ |  |
-                    | ✓ |  |
+                    | ✓ | The site admin should have a dedicated page or form for adding customer testimonials to the site.  |
+                    | ✓ | The page/form should include fields for the customer's name, testimonial image (if available), and testimonial text. |
+                    | ✓ | The page/form should have validation to ensure all required fields are filled out correctly. |
+                    | ✓ | The testimonials added by the site admin should be visible on the testimonial page to all users. |                  
 
                 - | passed | As a site admin, I want to be able to edit and delete testimonies if the customer wants to change details of their testimony. | 
                     |--------| --------------------|
-                    | ✓ |  |
-                    | ✓ |  |
-                    | ✓ |  |
-                    | ✓ |  |
-                    | ✓ |  |
+                    | ✓ | Delete and Edit button is present in only site admin testimonial page |
+                    | ✓ | Customer is able to request a change to their testimonial through the inquiry page |
+                    | ✓ | The site admin should be able to delete the testimonial completely if the customer requests it. |
 
         - EPIC 9 - Customer Inquiry
             | As a | Requirement           | Desktop  | Mobile | Tablet  |
@@ -446,26 +444,24 @@
 
                 - | passed | I want to be able to log any questions or inquiry I have |
                     |--------| --------------------|
-                    | ✓ |  |
-                    | ✓ |  |
-                    | ✓ |  |
-                    | ✓ |  |
-                    | ✓ |  |
-                    | ✓ |  |
+                    | ✓ | A dedicated form for users to log their inquiries or questions. |
+                    | ✓ | The form should include a submit button for the user to submit their inquiry. |
+                    | ✓ | Upon submitting the inquiry, the user should receive a confirmation message stating that their inquiry has been successfully logged. |
+                    | ✓ | The site admin should be able to update the status of the inquiry and add notes or comments to the inquiry for internal purposes. |
+                    | ✓ | The site admin should be able to communicate with the user via email or phone to provide assistance with their inquiry.|
 
                 - | passed | I want to be able to show the site user a message box stating that their inquiry has been noted and that we will get back to them as soon as possible.| 
                     |--------| --------------------|
-                    | ✓ |  |
-                    | ✓ |  |
-                    | ✓ |  |
-                    | ✓ |  |
-                    | ✓ |  |
+                    | ✓ | A pop up box appear up that show user confirmatory message that their message is successfully logged |
+                    | ✓ | The pop us box is responsive to all screen sizes |
+
 
                 - | passed | I want authenticated customer to be able to send testimonies via the inquiry form if they wish to |
                     |--------| --------------------|
-                    | ✓ |  |
-                    | ✓ |  |
-                    | ✓ |  |
+                    | ✓ | Authenticated user should be able to access the inquiry form after logging into their account on the website |
+                    | ✓ | The inquiry form should include a field for the customer to enter their testimony in detail. |
+                    | ✓ | The inquiry form should include a submit button for the customer to submit their testimony. |
+                    | ✓ | Upon submitting the testimony, the customer should receive a confirmation message stating that their testimony has been successfully submitted. |
 
 
             

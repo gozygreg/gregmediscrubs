@@ -21,7 +21,7 @@ class InquiryForm(ModelForm):
             'name': 'Name',
             'email': 'Email address',
             'subject': 'Subject',
-            'inquiry': 'Inquiry',
+            'inquiry': 'Inquiry/Testimonial',
         }
 
         self.fields['name'].widget.attrs['autofocus'] = True

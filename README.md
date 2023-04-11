@@ -1,6 +1,8 @@
 # Greg-Medi-Scrub
 Gregmediscrub is a fictional hospital attire store designed and implemented with Django, Python, HTML, and CSS. It aims to provide an easy-to-use interface where customers can browse all items at once or sort into specified categories. The site offers search functionality and an inbuilt stock system to ensure users cannot buy things that are not currently in stock. Once signed in, users can save an address to their profile for easy and convenient checkout.
 
+<img width="1404" alt="Am I responsive" src="https://user-images.githubusercontent.com/69070044/231084246-6b89e7e8-ddf6-4bc7-840c-cd9157b6da5c.png">
+
 The deployed site can be visited here: <a href="https://gregmediscrubs.herokuapp.com/" target="_blank">Gregmediscrub</a> for more options.
 
 # Table of Contents
