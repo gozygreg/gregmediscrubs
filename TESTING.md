@@ -30,6 +30,7 @@
         - [EPIC 7 - Payment Option:](#epic-7---payment-option)
         - [EPIC 8 - Customer Testimonial](#epic-8---customer-testimonial)
         - [EPIC 9 - Customer Inquiry](#epic-9---customer-inquiry)
+        - [EPIC 10 - Marketing](#epic-10---marketing)
 - [Automated Tests](#automated-tests)
 
 
@@ -198,20 +199,11 @@
         - ### EPIC 3 - Site Admin and Store Management:
             | As a | Requirement           | Desktop  | Mobile | Tablet  |
             |---|-----------------------|----------|--------| --------|
-            | Site admin | track and manage my inventory levels | * | * | * |
             | Site admin | manage and update product information | ✓ | ✓ | ✓ |
             | Site admin | view and manage customer orders and shipping information | ✓ | ✓ | ✓ |
 
             - acceptance criteria testing for EPIC 3 and its corresponding user stories
 
-                - | passed | track and manage my inventory levels |
-                    |--------| --------------------|
-                    | ✓ |  |
-                    | ✓ |  |
-                    | ✓ |  |
-                    | ✓ |  |
-                    | ✓ |  |
-                    | ✓ |  |
 
                 - | passed | manage and update product information | 
                     |--------| --------------------|
@@ -330,9 +322,7 @@
             |As a | Requirement           | Desktop  | Mobile | Tablet  |
             |--|-----------------------|----------|--------| --------|
             | Shopper | I want to be able view my order history | ✓ | ✓ | ✓ |
-            | Shopper | I want to be able to track my order | * | * | * |
             | Shopper | I want to be able to manage my account information | ✓ | ✓ | ✓ |
-            | Shopper | I want to be able to cancel an order when necessary | * | * | * |
 
             - acceptance criteria testing for EPIC 6 and its corresponding user stories
 
@@ -343,13 +333,7 @@
                     | ✓ | The order history should include a list of all the products ordered in each order, along with the quantity of each product ordered. |
                     | ✓ | The user should be able to click on an individual order to view more details about that order, including shipping information, payment information, and a list of the products ordered. |
                     | ✓ | The order history should be presented in a clear and organized manner, with the most older orders appearing first. |
-            
-
-                - | passed | I want to be able to track my order | 
-                    |--------| --------------------|
-                    | ✓ |  |
-                    | ✓ |  |
-                    | ✓ |  |
+ 
 
                 - | passed | want to be able to manage my account information |
                     |--------| --------------------|
@@ -357,21 +341,12 @@
                     | ✓ | The user should see a form to update their personal information, such as their name, email address, and phone number. |
                     | ✓ | The form should have an update button on the page |
 
-                - | passed | want to be able to cancel an order when necessary | 
-                    |--------| --------------------|
-                    | ✓ |  |
-                    | ✓ |  |
-                    | ✓ |  |
-                    | ✓ |  |
-                    | ✓ |  |
-
         - ### EPIC 7 - Payment Option:
             | As a | Requirement           | Desktop  | Mobile | Tablet  |
             |--|-----------------------|----------|--------| --------|
             | Shopper | I want to be able to purchase using my credit card | ✓ | ✓ | ✓ |
             | Registered shopper with an account | I want to be able to save my payment information for future purchases, so that I don't have to enter it every time I shop | ✓ | ✓ | ✓ |
             | Security-conscious shopper | I want to be able to use a secure payment option, such as PayPal or stripe to protect my personal and financial information | ✓ | ✓ | ✓ |
-            |International shopper | I want to be able to use payment option that supports multiple currencies, so that I can easily convert and make purchases in my local currency | * | * | * |
 
             - acceptance criteria testing for EPIC 7 and its corresponding user stories
 
@@ -393,10 +368,6 @@
                 - | passed | I want to be able to use a secure payment option, such as PayPal or stripe to protect my personal and financial information |
                     |--------| --------------------|
                     | ✓ |  as seen above in shopping cart aand checkout epic |
-
-                - | passed | I want to be able to use payment option that supports multiple currencies, so that I can easily convert and make purchases in my local currency | 
-                    |--------| --------------------|
-                    | ✓ |  This will be a future feature |
             
 
         - ### EPIC 8 - Customer Testimonial
@@ -465,6 +436,38 @@
                     | ✓ | The inquiry form should include a field for the customer to enter their testimony in detail. |
                     | ✓ | The inquiry form should include a submit button for the customer to submit their testimony. |
                     | ✓ | Upon submitting the testimony, the customer should receive a confirmation message stating that their testimony has been successfully submitted. |
+
+        - ### EPIC 10 - Marketing
+            | As a | Requirement           | Desktop  | Mobile | Tablet  |
+            |--|-----------------------|----------|--------| --------|
+            | As a business owner | I want to be able to send promotional emails to my customers. | ✓ | ✓ | ✓ |
+            | As a business owner | I want to be able to set up a social media page to promote my business | ✓ | ✓ | ✓ |
+            | As a business owner | I want to be able to increase my search engine ranking so that I can increase the number of visitors to my site. | ✓ | ✓ | ✓ |
+
+            - acceptance criteria testing for EPIC 10 and its corresponding user stories
+
+                - | passed | I want to be able to send promotional emails to my customers. |
+                    |--------| --------------------|
+                    | ✓ | Mail chimp form visible from all pages. |
+                    | ✓ | Mail chimp form has a field to enter the email address. |
+                    | ✓ | Mail chimp form has a button to submit the email address. |
+                    | ✓ | Collected email addresses are stored in the mail chimp database. |
+
+                - | passed | I want to be able to set up a social media page to promote my business | 
+                    |--------| --------------------|
+                    | ✓ | Facebook page is set up. |
+                    | ✓ | Facebook page is linked in the footer. |
+                    | ✓ | Facebook page links have correct rel attributes. |
+                    | ✓ | Facebook page has a shop now button linked to the sight. |
+
+
+                - | passed | I want to be able to increase my search engine ranking so that I can increase the number of visitors to my site |
+                    |--------| --------------------|
+                    | ✓ | Each page has a meta description. |
+                    | ✓ | Each page has a meta title. |
+                    | ✓ | Each page has meta keywords. |
+                    | ✓ | Site map |
+                    | ✓ | Robots.txt |
 
 
             

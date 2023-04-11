@@ -183,6 +183,7 @@ def submit_review(request, product_id):
 def is_superuser(user):
     return user.is_superuser
 
+
 @login_required
 @user_passes_test(is_superuser)
 def add_testimonial(request):

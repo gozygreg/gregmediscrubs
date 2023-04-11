@@ -167,7 +167,6 @@ The deployed site can be visited here: <a href="https://gregmediscrubs.herokuapp
                 - As a shopper, I want to be able to select a payment option so that I can pay for the items I want to purchase
 
             - EPIC 3 - Site Admin and Store Management:
-                - As site admin, I want to be able to track and manage my inventory levels, so that I can prevent stockouts and ensure that I have enough product to meet customer demand
                 - As a site admin, I want to easily manage and update product information, so that I can keep my online store up-to-date
                 - As site admin, I want to be able to view and manage customer orders and shipping information, so that I can keep track of my sales.
 
@@ -186,15 +185,12 @@ The deployed site can be visited here: <a href="https://gregmediscrubs.herokuapp
 
             - EPIC 6 - Order Management:
                 - As a shopper, I want to be able view my order history so that I can easily see what I've purchase in the past
-                - As a shopper, I want to be able to track my order so that I can know when it arrives
                 - As a shopper, I want to be able to manage my account information so that I can keep billing information up to date.
-                - As a shopper, I want to be able to cancel an order when necessary so that I can change my mind about my purchase
 
             - EPIC 7 - Payment Option:
                 - As a shopper, I want to be able to purchase using my credit card, so that I can make transaction quickly and securely
                 - As a registered shopper with an account, I want to be able to save my payment information for future purchases, so that I don't have to enter it every time I shop
                 - As a security-conscious shopper, I want to be able to use a secure payment option, such as PayPal or stripe to protect my personal and financial information
-                - As an international shopper, I want to be able to use payment option that supports multiple currencies, so that I can easily convert and make purchases in my local currency
 
             - EPIC 8 - Customer Testimonial
                 - As a site visitor, I want to see the list of customers who have given testimonies about the product they bought, sso that I can make an informed purchase without spending too much time researching.
@@ -203,10 +199,17 @@ The deployed site can be visited here: <a href="https://gregmediscrubs.herokuapp
                 - As the site admin, I want to be able to edit and delete testimonies if the customer wants to change details of their testimony.
 
 
-            - EPIC 7 - Customer Inquiry
+            - EPIC 9 - Customer Inquiry
                 - As an authenticated user with an account, I want to be able to log any questions or inquiry I have, so that there is a mean of communication between me and the site admin/site owner.
                 - As the site user, I want to be able to show the site user a message box stating that their inquiry has been noted and that we will get back to them as soon as possible.
                 - As the site user, I want authenticated customer to be able to send testimonies via the inquiry form if they wish to, so that I can get feedback on how we are doing as a company 
+
+           - EPIC 10 - Marketing
+                - As a business owner, I want to be able to send promotional emails so that I can promote new products and offers to my customers.
+                - As a business owner, I want to be able to set up a social media page so that I can promote my business and products to the global market.
+                - As a business owner, I want to be able to increase my search engine ranking so that I can increase the number of visitors to my site.
+
+
     - ### Skeleton
         - ### Wireframes
             The Balsamiq wireframing tool was utilized to create visual representations of the website's design and functionality. The wireframes utilized in the layout planning process are provided below. Nonetheless, certain alterations or eliminations were made during the development phase due to limitations of time or feasibility.
@@ -381,9 +384,8 @@ The deployed site can be visited here: <a href="https://gregmediscrubs.herokuapp
         I intend to incorporate the following features in the near future:
         - Product size
         - Sales reports
-        - Additional payment methods
-        - Additional user account features
-        - Product options
+        - Additional payment methods and international payments (Currency converter)
+        - Stock management and Track order functionalities
         - Ticketing Sytem
 - ## Testing Phase
 I have included testing details during and post-development in a separate document called [TESTING.md](./TESTING.md)
