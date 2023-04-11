@@ -61,20 +61,22 @@ def all_products(request):
     return render(request, 'store/store.html', context)
 
 
-@login_required
 def product_detail(request, product_id):
     """ A view to individual product details """
 
     product = get_object_or_404(Product, pk=product_id)
 
-    try:
-        order_line_item = OrderLineItem.objects.filter(product=product, order__user_profile=request.user.userprofile)
-        # Check if the product is in any order
-        if order_line_item.exists():
-            order = order_line_item[0].order
-        else:
+    if request.user.is_authenticated:
+        try:
+            order_line_item = OrderLineItem.objects.filter(product=product, order__user_profile=request.user.userprofile)
+            # Check if the product is in any order
+            if order_line_item.exists():
+                order = order_line_item[0].order
+            else:
+                order = None
+        except OrderLineItem.DoesNotExist:
             order = None
-    except OrderLineItem.DoesNotExist:
+    else:
         order = None
 
     # Get the review

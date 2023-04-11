@@ -425,3 +425,5 @@ I have included testing details during and post-development in a separate docume
     - I am very grateful to <a href="https://www.wearfigs.com/pages/women-home" target="_blank">FIGS</a> for allowing me to use their images
 - ## Media
     - All image for this project was gotten from <a href="https://www.wearfigs.com/pages/women-home" target="_blank">FIGS</a>
+
+- [back to top](#table-of-contents)
