@@ -118,18 +118,11 @@
             </div>
         </div>
         {% if request.user.is_superuser %}
-        <div class="row g-3 pt-3">
-            <div class="col-md-2 offset-md-0">
-                <button class="btn btn-black rounded-0 w-100"><a class="text-white text-uppercase"
-                        href="{% url 'edit_product' product.id %}">Edit
-                    </a></button>
-                <br><br>
-            </div>
-            <div class="col-md-2">
-                <button class="btn btn-black rounded-0 text-white w-100"><a class="text-white text-uppercase"
-                        href="{% url 'delete_product' product.id %}">Delete
-                    </a></button>
-            </div>
+        <div text-left>
+            <small class="ml-3">
+                <a href="{% url 'edit_product' product.id %}">Edit</a> ||
+                <a class="text-danger" href="{% url 'delete_product' product.id %}">Delete</a>
+            </small>
         </div>
         {% endif %}
         <br>
@@ -182,7 +175,8 @@
                         {% endif %}
                         {% else %}
                         <p>You must be logged in to post a review. <span><a
-                                    href="{% url 'account_login' %}">Login</a></span></p>
+                                    href="{% url 'account_login' %}">Login</a></span>
+                        </p>
                         {% endif %}
                     </div>
 
@@ -221,10 +215,17 @@
                         {{review.subject}}
                         <h6 class="mb-1"></h6>
                         <p>{{ review.review}}</p>
+                        {% if request.user == review.user %}
+                        <div class="review-actions">
+                            <a href="{% url 'update_review' review.id %}" class="btn btn-sm btn-primary">Edit</a>
+                            <a href="{% url 'delete_review' review.id %}" class="btn btn-sm btn-danger">Delete</a>
+                        </div>
+                        {% endif %}
                     </div>
                 </article>
+                {% empty %}
+                <p>No reviews yet.</p>
                 {% endfor %}
-
             </div>
         </div>
     </main>

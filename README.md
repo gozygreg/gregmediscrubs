@@ -255,7 +255,7 @@ The deployed site can be visited here: <a href="https://gregmediscrubs.herokuapp
 - ### Agile Development Process
 - ### E-commerce Application Type
     - Our platform operates on a Business-to-Customer (B2C) model, enabling medical professionals to easily purchase high-quality scrubs at competitive prices from the comfort of their homes or workplaces. This website is designed to be user-friendly, with a streamlined interface that allows customers to browse and purchase products with ease. Our product catalogue features a wide range of medical scrubs in various colors and sizes, ensuring that our customers can find the perfect fit for their unique needs. To make the shopping experience more convenient, we offer secure payment options, fast shipping, and hassle-free returns. Our platform is also optimized for mobile use, enabling customers to access the site on-the-go from any device.
-- ### Marketing Stratergy
+- ### Marketing Strategy
 - ## Features
     - ### Common to All Pages
         - ### Navbar

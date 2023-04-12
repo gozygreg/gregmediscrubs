@@ -155,29 +155,48 @@ def delete_product(request, product_id):
 @login_required
 def submit_review(request, product_id):
     url = request.META.get('HTTP_REFERER')
+    try:
+        review = ReviewRating.objects.get(user=request.user, product_id=product_id)
+        form = ReviewForm(instance=review)
+    except ReviewRating.DoesNotExist:
+        form = ReviewForm()
     if request.method == 'POST':
-        try:
-            reviews = ReviewRating.objects.get(user__id=request.user.id, product__id=product_id)
-            form = ReviewForm(request.POST, instance=reviews)
-            form.save()
-            messages.success(request, 'Thank you. Your review is updated')
+        form = ReviewForm(request.POST, instance=review)
+        if form.is_valid():
+            data = form.save(commit=False)
+            data.product_id = product_id
+            data.user = request.user
+            data.save()
+            messages.success(request, 'Thank you! Your review has been updated.' if review else 'Thank you! Your review has been submitted.')
             return redirect(url)
-        except ReviewRating.DoesNotExist:
-            form = ReviewForm(request.POST)
-            if form.is_valid():
-                data = ReviewRating()
-                data.subject = form.cleaned_data['subject']
-                data.rating = form.cleaned_data['rating']
-                data.review = form.cleaned_data['review']
-                data.ip = request.META.get('REMOTE_ADDR')
-                data.product_id = product_id
-                data.user_id = request.user.id
-                data.save()
-                messages.success(request, 'Thank you! Your review has been submitted')
-                return redirect(url)
-            else:
-                messages.error(request, 'Please correct the errors below.')
-                return HttpResponse('Form is not valid')
+        else:
+            messages.error(request, 'Something went wrong while submitting your review.')
+    return render(request, 'submit_review.html', {'form': form})
+
+
+@login_required
+def update_review(request, review_id):
+    url = request.META.get('HTTP_REFERER')
+    review = get_object_or_404(ReviewRating, id=review_id, user=request.user)
+    if request.method == 'POST':
+        form = ReviewForm(request.POST, instance=review)
+        if form.is_valid():
+            form.save()
+            messages.success(request, 'Your review has been updated successfully')
+        else:
+            messages.error(request, 'Something went wrong while updating your review')
+    else:
+        messages.info(request, 'You are editing your review. Please ensure you click one of the 5 stars above to validate your review')
+    return redirect(url)
+
+
+@login_required
+def delete_review(request, review_id):
+    url = request.META.get('HTTP_REFERER')
+    review = get_object_or_404(ReviewRating, id=review_id, user=request.user)
+    review.delete()
+    messages.success(request, 'Your review has been deleted successfully')
+    return redirect(url)
 
 
 def is_superuser(user):
