@@ -21,7 +21,7 @@ The deployed site can be visited here: <a href="https://gregmediscrubs.herokuapp
         - [Surface](#surface)
     - [Agile Development Process](#agile-development-process)
     - [E-commerce Application Type](#e-commerce-application-type)
-    - [Marketing Stratergy](#marketing-stratergy)
+    - [Marketing Stratergy](#marketing-strategy)
 - [Features](#features)
     - [Common to All Pages](#Common-to-all-pages)
         - [Navbar](#navbar)
@@ -263,7 +263,14 @@ The deployed site can be visited here: <a href="https://gregmediscrubs.herokuapp
     - Our platform operates on a Business-to-Customer (B2C) model, enabling medical professionals to easily purchase high-quality scrubs at competitive prices from the comfort of their homes or workplaces. This website is designed to be user-friendly, with a streamlined interface that allows customers to browse and purchase products with ease. Our product catalogue features a wide range of medical scrubs in various colors and sizes, ensuring that our customers can find the perfect fit for their unique needs. To make the shopping experience more convenient, we offer secure payment options, fast shipping, and hassle-free returns. Our platform is also optimized for mobile use, enabling customers to access the site on-the-go from any device.
 
 - ### Marketing Strategy
+    - We have utilized several marketing strategies to create awareness for our scrubs. Developing a strong brand identity is crucial, which involves designing a unique logo, selecting a color scheme that aligns with the medical industry, and creating a tagline that resonates with our target audience. Our website is optimized for search engines by using relevant keywords in our content, meta tags, and URLs to ensure potential customers can easily find us on Google.
 
+    - We have also established a Facebook business page and plan to post regularly to boost social media exposure. Targeted Facebook ads will also be utilized to reach our audience and increase engagement. We aim to collaborate with influencers in the medical industry to gain more exposure and credibility among our target audience. See link to our [facebook](https://www.facebook.com/profile.php?id=100091470390293) page.
+    - In addition, we offer special promotions and discounts to both first-time customers and loyal ones to encourage them to purchase from us. Our products page has a "freebie" button that offers several promotions, and we hope this will keep our customers coming back. See image below for our promotion section on the site:
+    <img width="1000" alt="freebies" src="https://user-images.githubusercontent.com/69070044/231901308-05e950d6-5908-4fcf-87e3-97c00afd014b.png">
+    - Creating helpful content, such as blog posts, that educates our target audience about the benefits of wearing medical scrubs and how to properly care for them is also part of our marketing strategy. Attending trade shows and events in the medical industry to showcase our medical scrubs and network with potential customers and partners is another way we plan to promote our ecommerce business.
+
+    - Overall, a combination of these marketing strategies can effectively promote our ecommerce business that sells medical scrubs.
 - ## Features
     - ### Common to All Pages
         - ### Navbar
@@ -337,7 +344,6 @@ The deployed site can be visited here: <a href="https://gregmediscrubs.herokuapp
             <img width="1000" alt="checkout-success-dv" src="https://user-images.githubusercontent.com/69070044/230593250-8e24d952-7315-4551-a884-018c95293814.png">
             - Mobile <br>
             <img width="350" alt="checkout-success-mv" src="https://user-images.githubusercontent.com/69070044/230593247-ab684c44-1d0e-48b3-80bc-fd5358567a9d.png">
-        - ### Checkout Success
         - ### Testimonial
             - ## Testimonial list
                 - Desktop
@@ -354,30 +360,46 @@ The deployed site can be visited here: <a href="https://gregmediscrubs.herokuapp
             <img width="1000" alt="profile-page-dv" src="https://user-images.githubusercontent.com/69070044/230580048-7505a087-8d55-44a0-9286-3d45779e838b.png">
             - Mobile <br>
             <img width="350" alt="profile-page-mv" src="https://user-images.githubusercontent.com/69070044/230580091-a6851079-52d6-4a73-8465-be987fbf4939.png">
-            - Signup
-                - Desktop
-                <img width="1000" alt="signup-dv" src="https://user-images.githubusercontent.com/69070044/230595988-eeb0a1d1-0f50-4e42-8e4d-b581059c34bd.png">
-                - Mobile <br>
-                <img width="350" alt="signup-mv" src="https://user-images.githubusercontent.com/69070044/230595985-c340987f-4bff-4b63-b952-0860672f72e7.png">
-            - Sign In
-                - Desktop
-                <img width="1000" alt="signin-dv" src="https://user-images.githubusercontent.com/69070044/230595989-6f02134e-6402-40a4-a66f-371e4508a669.png">
-                - Mobile <br>
-                <img width="350" alt="signin-mv" src="https://user-images.githubusercontent.com/69070044/230595991-ae5e5084-4e4f-47f8-bf6f-133291629109.png">
-            - Sign Out
-                - Desktop
-                <img width="1000" alt="signout-page-dv" src="https://user-images.githubusercontent.com/69070044/230580308-1c6f236e-20d3-47e6-ba9e-1c4421b4087e.png">
-                - Mobile <br>
-                <img width="350" alt="signout-page-mv" src="https://user-images.githubusercontent.com/69070044/230580351-018b70a7-6f0f-4386-86e8-5b9b21aaf4fb.png">
         - ### Inquiry
             - Desktop
             <img width="1000" alt="inquiry-page-dv" src="https://user-images.githubusercontent.com/69070044/230580397-35194ef1-21fa-46aa-bef9-418c1efa3ebe.png">
             - Mobile <br>
             <img width="350" alt="inquiry-page-mv" src="https://user-images.githubusercontent.com/69070044/230580418-b4d011e0-8e13-48d9-af30-42c15a6e3ae1.png">
         - ### Authentication
+            - Django all-auth library was used to handle authentication on the site. The functionality includes; loging in/out, sign up/register, reset password, verifying email and email confirmation.
+            - Signup
+                    - Desktop
+                    <img width="1000" alt="signup-dv" src="https://user-images.githubusercontent.com/69070044/230595988-eeb0a1d1-0f50-4e42-8e4d-b581059c34bd.png">
+                    - Mobile <br>
+                    <img width="350" alt="signup-mv" src="https://user-images.githubusercontent.com/69070044/230595985-c340987f-4bff-4b63-b952-0860672f72e7.png">
+                - Sign In
+                    - Desktop
+                    <img width="1000" alt="signin-dv" src="https://user-images.githubusercontent.com/69070044/230595989-6f02134e-6402-40a4-a66f-371e4508a669.png">
+                    - Mobile <br>
+                    <img width="350" alt="signin-mv" src="https://user-images.githubusercontent.com/69070044/230595991-ae5e5084-4e4f-47f8-bf6f-133291629109.png">
+                - Sign Out
+                    - Desktop
+                    <img width="1000" alt="signout-page-dv" src="https://user-images.githubusercontent.com/69070044/230580308-1c6f236e-20d3-47e6-ba9e-1c4421b4087e.png">
+                    - Mobile <br>
+                    <img width="350" alt="signout-page-mv" src="https://user-images.githubusercontent.com/69070044/230580351-018b70a7-6f0f-4386-86e8-5b9b21aaf4fb.png">
         - ### 404 Page
             <img width="1000" alt="404" src="https://user-images.githubusercontent.com/69070044/230581541-d4885d67-6888-4627-85f8-664c95ae0316.png">
         - ### Responsive Design
+            All pages are fully responsive. I tested the responsiveness on chrome dev tool and on the following devices (This is not an exaustive list);
+            - Iphone SE
+            - Iphone XR
+            - Iphone 12 pro
+            - Pixel 5
+            - Samsung galaxy S8 +
+            - Ipad Air
+            - Ipad Mini
+            - Media query was used to also control responsiveness to various screen sizes:
+                - @media (min-width: 1200px)
+                - @media (min-width: 992px) 
+                - @media (max-width: 991px) 
+                - @media (min-width: 770px) and (max-width: 1380px)
+                - @media only screen and (max-width: 768px)
+            - [Am I responsive](https://ui.dev/amiresponsive) was also utilised check the responsiveness of my site
 
 - ## Admin Panel for Store Admin
     - ### Admin Panel Overview
