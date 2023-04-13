@@ -91,7 +91,7 @@ The deployed site can be visited here: <a href="https://gregmediscrubs.herokuapp
         | Product reviews | 5 | 3
         | Full CRUD functionality | 5 | 5
         | Order History | 5 | 5
-        | Stock management system | 5 | 3
+        | Site testimonial | 5 | 3
         | Contact form | 3 | 5
         | Social Media pages | 5 | 5
         | Promotions and adverts | 3 | 3
@@ -104,12 +104,13 @@ The deployed site can be visited here: <a href="https://gregmediscrubs.herokuapp
         | Terms and conditions | 3 | 5
         | Guest checkout completion | 5 | 5
         | Generate sales reports | 5 | 1
-        | Order Status | 2 | 5
+        | Order Status | 2 | 3
         | Ability to edit order until status set to processing | 1 | 5
         | Store blog | 1 | 5
         | Full CRUD functionality | 5 | 5
+        | Customer Inquiry | 3 | 5
         | ----- | ----- | -----
-        | Total| 127 | 132
+        | Total| 130 | 135
 
     - ### Scope
         Due to limited timeframe for this project and the specific grading criteria, it will be necessary to make additional compromises during the design and development phases. To address this, I will employ an agile methodology and conduct weekly progress reviews. Based on the results of these reviews, I will make decisions about which features to include, modify, or remove in order to meet the deadline and deliver a viable minimum viable product (MVP).
@@ -243,19 +244,26 @@ The deployed site can be visited here: <a href="https://gregmediscrubs.herokuapp
         - Keywords
             - The following keywords were used for the website for optimazation; medical scrubs, scrub uniforms, nursing scrubs, medical uniforms, scrub tops, scrub pants, scrub sets, petite scrubs, tall scrubs, plus size scrubs, maternity scrubs, medical lab coats, dental scrubs, veterinary scrubs, surgical scrubs, healthcare scrubs, hospital scrubs, nursing shoes, compression socks, medical accessories
         - Page Titles
+            - Each page shows an extra title after the store name to assist help with SEO.
         - Robots.txt and sitemap.xml
+            - Robots.txt and sitemap files have been added to the site. This can be found in the project level directories.
     - ### Content
         Due to the nature of the site, there were limited opportunities for textual content. As many of the keywords were product-related, I focused on utilizing heading and semantic tags effectively to ensure a high-quality search rating.
     - ### Surface
         After planning the project, selecting an appropriate theme became the next step. While aiming for simplicity, I incorporated color to enhance the site's visual appeal. To maintain a clean and user-friendly design, I employed ample white space throughout.
         - Colour Scheme
-            - Although black and white served as the primary colors on the site, I added additional hues to highlight important content and establish a distinct brand identity. The accompanying color grid guided my selection process, although some initial ideas had to be altered based on contrast considerations, which are outlined below.
+            - The color scheme was kept really simple. Black and white are used to served as the primary colors on the site.
         - Typography
             - <a href="https://fonts.google.com/specimen/DM+Sans?query=dm+s" target="_blank">DM Sans</a> was utilized for the primary headings and logo, this font is clean and straightforward, ensuring legibility while also making a bold statement.
+
 - ### Agile Development Process
+    - The plan for this project was carried out using the Agile Methodology in Github. Epics and User Stories were created using [issues](https://github.com/gozygreg/gregmediscrubs/issues) on git hub. Each user story explicitly explains the purpose of the issues. Each story was assigned a classification of must-have, should-have and could-have. It was prioritised using GitHub labels with different colors. See link to kanban board [here](https://github.com/users/gozygreg/projects/15). Various tasks performed were also itemized using the agile methodology in Github.
+
 - ### E-commerce Application Type
     - Our platform operates on a Business-to-Customer (B2C) model, enabling medical professionals to easily purchase high-quality scrubs at competitive prices from the comfort of their homes or workplaces. This website is designed to be user-friendly, with a streamlined interface that allows customers to browse and purchase products with ease. Our product catalogue features a wide range of medical scrubs in various colors and sizes, ensuring that our customers can find the perfect fit for their unique needs. To make the shopping experience more convenient, we offer secure payment options, fast shipping, and hassle-free returns. Our platform is also optimized for mobile use, enabling customers to access the site on-the-go from any device.
+
 - ### Marketing Strategy
+
 - ## Features
     - ### Common to All Pages
         - ### Navbar
@@ -424,7 +432,13 @@ I have included testing details during and post-development in a separate docume
     - Stripe:
         - to handle payments.
 - ## Credits
+    - Big shoutout to Code Institute; for the course materials, all the tutors who helped me when I was stuck. I cannot thank you guys enough!
     - I am very grateful to <a href="https://www.wearfigs.com/pages/women-home" target="_blank">FIGS</a> for allowing me to use their images
+    - The code institute Slack community for always being available to answer my questions.
+    - [W3school](https://www.w3schools.com/)
+    - [drawsql](https://drawsql.app/) was used to create the database diagram.
+    - [Stackoverflow](https://stackoverflow.com/)
+    - [Am I responsive](https://ui.dev/amiresponsive) website for helping me check the responsiveness of my site
 - ## Media
     - All image for this project was gotten from <a href="https://www.wearfigs.com/pages/women-home" target="_blank">FIGS</a>
 
