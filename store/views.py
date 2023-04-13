@@ -155,6 +155,7 @@ def delete_product(request, product_id):
 @login_required
 def submit_review(request, product_id):
     url = request.META.get('HTTP_REFERER')
+    review = None
     try:
         review = ReviewRating.objects.get(user=request.user, product_id=product_id)
         form = ReviewForm(instance=review)
