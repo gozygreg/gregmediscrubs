@@ -8,6 +8,7 @@ The deployed site can be visited here: <a href="https://gregmediscrubs.herokuapp
 # Table of Contents
 - [Planning Phase](#planning-phase)
     - [Strategy](#strategy)
+        - [Buiness Model]()
         - [Site Aims](#site-aims)
         - [Opportunities](#opportunities)
         - [Scope](#scope)
@@ -47,7 +48,6 @@ The deployed site can be visited here: <a href="https://gregmediscrubs.herokuapp
         - [Inquiry](#inquiry)
         - [Review Ratings](#review-ratings)
         - [Testimonial](#testimonial)
-    - ### Future Features
     - [Future Features](#future-features)
 - [Testing Phase](#testing-phase)
 - [Deployment](#deployment)
@@ -59,6 +59,25 @@ The deployed site can be visited here: <a href="https://gregmediscrubs.herokuapp
 
 ## PLANNING PHASE
 - ### Strategy
+    - ### Buiness Model
+        The following buiness model will be utilised to ensure the success of the online store.
+
+        1. Value Proposition: Providing high-quality medical scrubs to healthcare professionals at affordable prices.
+
+        2. Target Market: Healthcare professionals, such as doctors, nurses, and other medical staff.
+
+        3. Revenue Model: The business generates revenue through the sale of medical scrubs, with a focus on offering competitive prices and frequent discounts to drive sales.
+
+        4. Product Strategy: The online store offers a wide range of medical scrubs in various sizes, colors, and styles, to cater to the diverse needs of healthcare professionals. The store sources its products from reliable suppliers to ensure quality and consistency.
+
+        5. Marketing Strategy: The business leverages digital marketing channels such as social media, email marketing, and paid advertising to reach its target market. It also partners with medical institutions and healthcare organizations to expand its reach and build brand awareness.
+
+        6. Customer Service: The business prioritizes customer satisfaction by offering a hassle-free shopping experience, easy returns and exchanges, and responsive customer support via email, phone, and live chat.
+
+        7. Logistics and Fulfillment: The business partners with reputable shipping carriers to ensure timely delivery of orders, while also offering free shipping for orders above a certain amount. It also implements a streamlined order fulfillment process to minimize errors and delays.
+
+        8. Technology and Operations: The online store is built on a reliable ecommerce platform with features such as secure payment processing, inventory management, and order tracking. The business also uses data analytics to gain insights into customer behavior and optimize its operations.
+
     - ### Site-Aims
         The aim of a gregmediscrubs ecommerce store is to provide high-quality, durable, and comfortable medical scrubs to healthcare professionals. The site cater to the needs of medical professionals such as doctors, nurses, and other healthcare staff who require comfortable and practical uniforms for their work.
 
