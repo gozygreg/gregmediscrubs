@@ -128,7 +128,8 @@
         <br>
         <div class="row">
             <div class="col-md-9">
-
+                {% if user.is_authenticated %}
+                {% if order %}
                 <form action="{% url 'submit_review' product.id %}" method="POST">
                     {% csrf_token %}
                     <h5>Write your Review</h5>
@@ -166,8 +167,7 @@
                         Review:
                         <textarea name="review" class="form-control" aria-label="enter review" rows="4"></textarea>
                         <br>
-                        {% if user.is_authenticated %}
-                        {% if order %}
+
                         <input type="submit" class="btn btn-black rounded-0" value="Submit Review"
                             aria-label="submit review">
                         {% else %}
@@ -182,50 +182,58 @@
 
                 </form>
                 <br>
-                <header class="section-heading">
-                    <h3>Customer Reviews</h3>
-                </header>
-                {% for review in reviews %}
-                <article class="box mb-3">
-                    <div class="icontent w-100">
-                        <!-- <img src="" class="img-xs icon rounded-circle"> <i class="fa-solid fa-user"></i> -->
-                        <span class="user-icon">
-                            <i class="fa-solid fa-user"></i>
-                        </span>
-                        <div class="text">
-                            <span class="date text-muted float-md-right"> {{review.updated_at}}</span>
-                            <h6 class="mb-1">{{review.user.username}}</h6>
-                            <div class="rating-star">
-                                <span>
-                                    <i class="fa fa-star{% if review.rating == 0.5 %}-half-o{% elif review.rating < 1 %}-o {% endif %}"
-                                        aria-hidden="true"></i>
-                                    <i class="fa fa-star{% if review.rating == 1.5 %}-half-o{% elif review.rating < 2 %}-o {% endif %}"
-                                        aria-hidden="true"></i>
-                                    <i class="fa fa-star{% if review.rating == 2.5 %}-half-o{% elif review.rating < 3 %}-o {% endif %}"
-                                        aria-hidden="true"></i>
-                                    <i class="fa fa-star{% if review.rating == 3.5 %}-half-o{% elif review.rating < 4 %}-o {% endif %}"
-                                        aria-hidden="true"></i>
-                                    <i class="fa fa-star{% if review.rating == 4.5 %}-half-o{% elif review.rating < 5 %}-o {% endif %}"
-                                        aria-hidden="true"></i>
-                                </span>
+                <section class="reviews-section">
+                    <div class="container">
+                        <h2 class="section-heading mb-4">Customer Reviews</h2>
+                        <div class="row">
+                            {% for review in reviews %}
+                            <div class="col-md-12">
+                                <div class="card mb-4">
+                                    <div class="card-header d-flex justify-content-between align-items-center">
+                                        <div class="user-info d-flex align-items-center">
+                                            <i class="fas fa-user-circle mr-2"></i>
+                                            <div>
+                                                <h4 class="mb-0">{{review.user.username}}</h4>
+                                                <small class="text-muted">{{review.updated_at}}</small>
+                                            </div>
+                                        </div>
+                                        <div class="rating-star">
+                                            <span>
+                                                <i class="fa fa-star{% if review.rating == 0.5 %}-half-o{% elif review.rating < 1 %}-o {% endif %}"
+                                                    aria-hidden="true"></i>
+                                                <i class="fa fa-star{% if review.rating == 1.5 %}-half-o{% elif review.rating < 2 %}-o {% endif %}"
+                                                    aria-hidden="true"></i>
+                                                <i class="fa fa-star{% if review.rating == 2.5 %}-half-o{% elif review.rating < 3 %}-o {% endif %}"
+                                                    aria-hidden="true"></i>
+                                                <i class="fa fa-star{% if review.rating == 3.5 %}-half-o{% elif review.rating < 4 %}-o {% endif %}"
+                                                    aria-hidden="true"></i>
+                                                <i class="fa fa-star{% if review.rating == 4.5 %}-half-o{% elif review.rating < 5 %}-o {% endif %}"
+                                                    aria-hidden="true"></i>
+                                            </span>
+                                        </div>
+                                    </div>
+                                    <div class="card-body">
+                                        <h6 class="card-title">{{review.subject}}</h6>
+                                        <p class="card-text">{{review.review}}</p>
+                                        {% if request.user == review.user %}
+                                        <div class="review-actions">
+                                            <a href="{% url 'update_review' review.id %}"
+                                                class="btn btn-sm btn-primary">Edit</a>
+                                            <a href="{% url 'delete_review' review.id %}"
+                                                class="btn btn-sm btn-danger">Delete</a>
+                                        </div>
+                                        {% endif %}
+                                    </div>
+                                </div>
                             </div>
+                            {% empty %}
+                            <div class="col-md-12">
+                                <p>No reviews yet.</p>
+                            </div>
+                            {% endfor %}
                         </div>
                     </div>
-                    <div class="mt-3">
-                        {{review.subject}}
-                        <h6 class="mb-1"></h6>
-                        <p>{{ review.review}}</p>
-                        {% if request.user == review.user %}
-                        <div class="review-actions">
-                            <a href="{% url 'update_review' review.id %}" class="btn btn-sm btn-primary">Edit</a>
-                            <a href="{% url 'delete_review' review.id %}" class="btn btn-sm btn-danger">Delete</a>
-                        </div>
-                        {% endif %}
-                    </div>
-                </article>
-                {% empty %}
-                <p>No reviews yet.</p>
-                {% endfor %}
+                </section>
             </div>
         </div>
     </main>
