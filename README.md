@@ -8,7 +8,7 @@ The deployed site can be visited here: <a href="https://gregmediscrubs.herokuapp
 # Table of Contents
 - [Planning Phase](#planning-phase)
     - [Strategy](#strategy)
-        - [Buiness Model]()
+        - [Buiness Model](#buiness-model)
         - [Site Aims](#site-aims)
         - [Opportunities](#opportunities)
         - [Scope](#scope)
