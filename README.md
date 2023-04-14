@@ -43,8 +43,11 @@ The deployed site can be visited here: <a href="https://gregmediscrubs.herokuapp
 - [Admin Panel for Store Admin](#admin-panel-for-store-admin)
     - [Admin Panel Overview](#admin-panel-overview)
         - [Products](#products)
-        - [Messages](#messages)
         - [Orders](#orders)
+        - [Inquiry](#inquiry)
+        - [Review Ratings](#review-ratings)
+        - [Testimonial](#testimonial)
+    - ### Future Features
     - [Future Features](#future-features)
 - [Testing Phase](#testing-phase)
 - [Deployment](#deployment)
@@ -153,7 +156,8 @@ The deployed site can be visited here: <a href="https://gregmediscrubs.herokuapp
         - Generate sales reports.
 
     - ### Structure
-
+        Based on the above information, I have designed a flowchart using [lucid app](https://lucid.app/documents#/dashboard) to assist me in understanding how the user will move through the essential features of the online store. While minor modifications may be made to this initial user experience plan during the Agile development process, the general framework will remain consistent.
+        ![PP5](https://user-images.githubusercontent.com/69070044/231914384-bccbb699-782c-4a3b-9c21-c188ee00b506.jpeg)
         - ### User Stories:
             - EPIC 1 - Product browsing Search:
                 - As a shopper, I want to be able to search for products by entering keywords or by brand so that I can easily find what I am looking for
@@ -404,19 +408,30 @@ The deployed site can be visited here: <a href="https://gregmediscrubs.herokuapp
 - ## Admin Panel for Store Admin
     - ### Admin Panel Overview
         - ### Products
+            Super user is able to add, edit and delete product via the frontend as well as the back end.
             - Desktop
             <img width="1000" alt="product-mgt-dv" src="https://user-images.githubusercontent.com/69070044/230580619-762247d4-b930-4c57-97af-83dcec9094c8.png">
             <img width="1000" alt="product-mgt2-dv" src="https://user-images.githubusercontent.com/69070044/230580693-601cff94-cd39-476d-9e51-660a987c6cee.png">
             - Mobile <br>
             <img width="350" alt="product-mgt-mv" src="https://user-images.githubusercontent.com/69070044/230580642-468e2b7d-84d4-4163-a9bf-b1370093a8b6.png"> <br>
             <img width="350" alt="product-mgt2-mv" src="https://user-images.githubusercontent.com/69070044/230580726-cca59555-6901-46b1-8c57-d64e820d2097.png">
+        - ### Inquiry
+            Within the admin panel, the superuser has access to view any messages received through the "contact us" form, as well as a section for leaving internal notes for other staff members. In the future, a ticketing system will be implemented, allowing the admin to reply and make it visible to the customer on the front end. Despite this, the current system allows the customer to leave a message and for the admin to leave notes regarding necessary actions or responses sent by email. To assist staff members in tracking replied messages, a feature has been enabled to mark messages as replied to, defaulting to a pending reply status. Additionally, various filter options are available for staff to sort by status and date.
+            Customers who do not have any inquiries but want to send a testimonial can do so by using the inquiry form. There will be a future upgrade where a separate form will be build to handle customer testimonial.
+        - ### Orders
+            Also, within the admin panel, superuser is able to see the various orders customers has placed.
+        - ### Review Ratings
+            Through the administrative panel, the superuser has the ability to perform CRUD operations such as adding, deleting, or modifying reviews. In addition, customer reviews can be accessed by customer via the frontend. It should be noted that customers can only add product reviews if they meet two conditions: they must be registered users and have purchased the product.
+        - ### Testimonial
+            The superuser has the authority to include testimonials from customers who have purchased products from our company in the past and are happy with the overall service we rendered. Unlike review ratings that concentrate on assessing a specific product, customer testimonials revolve around the overall experience of dealing with our company. The superuser has the power to perform CRUD operations on these testimonials. Nonetheless, customers have the option of sharing their testimonials by utilizing the inquiry field or by sending an email to us.
     - ### Future Features
-        I intend to incorporate the following features in the near future:
+        There is a lot of potential in this project and although there is a viable MVP, there are many additional features I would like implement in the future:
         - Product size
         - Sales reports
         - Additional payment methods and international payments (Currency converter)
         - Stock management and Track order functionalities
         - Ticketing Sytem
+        - Allow customer to add testimonial from the front end
 - ## Testing Phase
 I have included testing details during and post-development in a separate document called [TESTING.md](./TESTING.md)
 - ## Deployment
