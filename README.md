@@ -461,7 +461,7 @@ I have included testing details during and post-development in a separate docume
         - The packages installed for the project can be found in the [requirements.txt](./requirements.txt)
     - Django:
         - as the python framework in the project.
-    - Django all auth:
+    - Django allauth:
         - to handle user authentication and related tasks i.e. sign in, sign up, sign out.
     - Heroku:
         - for deployment.
@@ -489,12 +489,15 @@ I have included testing details during and post-development in a separate docume
         - to handle payments.
 - ## Credits
     - Big shoutout to Code Institute; for the course materials, all the tutors who helped me when I was stuck. I cannot thank you guys enough!
+    - Rohit Sharma - Mentor and guide. Thank you so much.
     - I am very grateful to <a href="https://www.wearfigs.com/pages/women-home" target="_blank">FIGS</a> for allowing me to use their images
     - The code institute Slack community for always being available to answer my questions.
     - [W3school](https://www.w3schools.com/)
     - [drawsql](https://drawsql.app/) was used to create the database diagram.
     - [Stackoverflow](https://stackoverflow.com/)
     - [Am I responsive](https://ui.dev/amiresponsive) website for helping me check the responsiveness of my site
+    - Arno Pretorius for your youtube video on building an e-commerse store. I got load of idea from them
+
 - ## Media
     - All image for this project was gotten from <a href="https://www.wearfigs.com/pages/women-home" target="_blank">FIGS</a>
 

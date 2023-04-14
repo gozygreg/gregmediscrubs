@@ -154,6 +154,7 @@ def delete_product(request, product_id):
 
 @login_required
 def submit_review(request, product_id):
+    """ View to add and submit  product review"""
     url = request.META.get('HTTP_REFERER')
     review = None
     try:
@@ -177,6 +178,7 @@ def submit_review(request, product_id):
 
 @login_required
 def update_review(request, review_id):
+    """View to edit or update product review"""
     url = request.META.get('HTTP_REFERER')
     review = get_object_or_404(ReviewRating, id=review_id, user=request.user)
     if request.method == 'POST':
@@ -193,6 +195,7 @@ def update_review(request, review_id):
 
 @login_required
 def delete_review(request, review_id):
+    """View to delete product review"""
     url = request.META.get('HTTP_REFERER')
     review = get_object_or_404(ReviewRating, id=review_id, user=request.user)
     review.delete()
@@ -207,6 +210,7 @@ def is_superuser(user):
 @login_required
 @user_passes_test(is_superuser)
 def add_testimonial(request):
+    """View to add customer testimonials"""
     if request.method == 'POST':
         form = TestimonialForm(request.POST)
         if form.is_valid():
@@ -223,6 +227,7 @@ def add_testimonial(request):
 @login_required
 @user_passes_test(is_superuser)
 def edit_testimonial(request, pk):
+    """view to edit customer testimonials"""
     testimonial = get_object_or_404(Testimonial, pk=pk)
     if request.method == 'POST':
         form = TestimonialForm(request.POST, instance=testimonial)
@@ -238,6 +243,7 @@ def edit_testimonial(request, pk):
 @login_required
 @user_passes_test(is_superuser)
 def delete_testimonial(request, pk):
+    """view to delete customer testimonials"""
     testimonial = get_object_or_404(Testimonial, pk=pk)
     testimonial.delete()
     messages.success(request, 'Testimonial deleted successfully.')
